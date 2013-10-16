@@ -21,9 +21,9 @@ public class ComplexIsoNotFilled extends Activity {
 		this.requestWindowFeature(Window.FEATURE_NO_TITLE);
 		setContentView(R.layout.main);
 
-		int l = 1;
-		int w = 1;
-		int d = 1;
+		int l = 16;
+		int w = 12;
+		int d = 8;
 
 		OpenBox box = new OpenBox(l*25, w*25, d*25,0, 0);
 

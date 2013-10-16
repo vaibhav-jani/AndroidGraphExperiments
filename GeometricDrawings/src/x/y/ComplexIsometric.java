@@ -21,9 +21,9 @@ public class ComplexIsometric extends Activity {
 		this.requestWindowFeature(Window.FEATURE_NO_TITLE);
 		setContentView(R.layout.main);
 		
-		int l = 8;
-		int w = 4;
-		int d = 3;
+		int l = 32; //Make length l = 1 for top view
+		int w = 24; //Make width w = 1 for side view 
+		int d = 18; //Make depth d = 1 for front view 
 		
 		FilledOpenBox box = new FilledOpenBox(l*25, w*25, d*25,0, 0);
 				

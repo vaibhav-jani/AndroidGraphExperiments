@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="x.y"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:maxSdkVersion="17"
+        android:minSdkVersion="7"
+        android:targetSdkVersion="17" />
+
+    <application
+        android:allowBackup="false"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name" >
+        <activity
+            android:name=".Main"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".CurveTest"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".Test"
+            android:label="@string/app_name" >
+
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            -->
+        </activity>
+        <activity
+            android:name=".ButterflyCurve"
+            android:label="@string/app_name" >
+
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            -->
+        </activity>
+        <activity
+            android:name=".CTest"
+            android:label="@string/app_name" >
+
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            -->
+        </activity>
+        <activity
+            android:name=".TestBoxes"
+            android:label="@string/app_name" >
+
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            -->
+        </activity>
+        <activity
+            android:name=".Test2"
+            android:label="@string/app_name" >
+
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            -->
+        </activity>
+        <activity
+            android:name=".SpiralTest7"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".SpiralTest6"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".SpiralTest5"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".SpiralTest4"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".SpiralTest3"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".SpiralTest2"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".SpiralTest1"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".Protons"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".Universe"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".ParabolaHyperbolaEllipse"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".Uranus"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".AmaizedForThis"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".OCirclesO"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".Trigonometry"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".FourBoxes"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".ABox"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".NothingSpecialInThis"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".EightBoxes"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".NothingInteresting"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".ComplexIsometric"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".ExComplexIsometric"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".SimpleIsoMetric"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".ComplexIsoNotFilled"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".ComplexDiamond"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".SimpleDiamond"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".FilledSimpleDiamond"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".PyramidDiamond"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".FilledPyramidDiamond"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".FilledPyramidDiamond2"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".FilledPyramidDiamond3"
+            android:label="@string/app_name" >
+        </activity>
+    </application>
+
+</manifest>

@@ -14,3 +14,5 @@ Here are few samples I plotted :
 ![Piramid1](https://lh5.googleusercontent.com/-OjN9LNfuzd0/UJt19nyDvrI/AAAAAAAABCY/OZmIOu9Lqng/w1092-h683-no/4.png)
 
 ![Diamond](https://lh3.googleusercontent.com/-Ew_JaW5P9t8/UJt2TgN3mRI/AAAAAAAABCw/DvAw5kT_3y4/w1092-h683-no/2.png)
+
+![Isonetric](https://lh5.googleusercontent.com/-9nizzUtGybQ/UJt3ZfuvEJI/AAAAAAAABEM/Sl2yinIlJEw/w1020-h645-no/A+%25282%2529.png)

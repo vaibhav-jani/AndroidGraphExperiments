@@ -3,7 +3,7 @@ AndroidGraphExperiments
 
 Graphing experiments on Android.
 
-Here are few samples I plotted : 
+Here are few samples I plotted (In 10" Tablet resolution 1280x800): 
 
 ![Butterfly Curve](https://lh5.googleusercontent.com/-sNk_aLqtgYo/UJuV4LbZdZI/AAAAAAAABGg/0SqNf8ohlCc/w1092-h683-no/Butterfly111.png)
 

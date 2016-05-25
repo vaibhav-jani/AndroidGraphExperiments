@@ -162,14 +162,15 @@ public class SurfaceRenderer extends DrawingSurface {
 					super.paint.setColor(Color.parseColor(attributes.getPathColor()));
 					super.paint.setStrokeWidth(curve.getAttributes().getStrokeWidthOfPath());
 					super.paint.setStyle(Paint.Style.STROKE);
-					
-					/*if(attributes.isDotted()) {
-						super.paint.setPathEffect(new DashPathEffect(new float[] {5, 10}, 0));
-					} else {
-						super.paint.setPathEffect(new CornerPathEffect(10));
-					}*/
-					canvas.drawPath(path, paint);
+		
 				}
+				
+				/*if(attributes.isDotted()) {
+					super.paint.setPathEffect(new DashPathEffect(new float[] {5, 10}, 0));
+				} else {
+					super.paint.setPathEffect(new CornerPathEffect(10));
+				}*/
+				canvas.drawPath(path, paint);
 			}
 			
 		}

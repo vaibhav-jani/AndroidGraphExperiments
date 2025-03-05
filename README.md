@@ -13,6 +13,13 @@ Features:
 - Support for various mathematical equations.
 - A dynamic and interactive graphing experience.
 
+Known issues [WIP]:
+
+- Remove AsyncTask in SurfaceRenderer
+- Migrate to Kotlin
+- Bug fixes, refactoring drawing policies and attributes
+- Add Jetpack Compose support
+
 ---
 
 Example: Butterfly Curve

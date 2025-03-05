@@ -13,7 +13,7 @@ Features:
 - Support for various mathematical equations.
 - A dynamic and interactive graphing experience.
 
-***
+---
 
 Example: Butterfly Curve
 
@@ -104,7 +104,23 @@ Tablet (10" resolution 2560x1600):
 
 ![Complex ISO Perspective](examples-images/Perspective_ISO.png)
 
+---
 
+![License: WTFPL](https://img.shields.io/badge/License-WTFPL-brightgreen.svg)
+
+            DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
+                    Version 2, March 2025
+
+Copyright (C) YEAR vaibhav-jani <vaibhavaniljani@gmail.com>
+
+Everyone is permitted to copy and distribute verbatim or modified
+copies of this license document, and changing it is allowed as long
+as the name is changed.
+
+            DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
+TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION, AND MODIFICATION
+
+0. You just DO WHAT THE FUCK YOU WANT TO.
 
 
 

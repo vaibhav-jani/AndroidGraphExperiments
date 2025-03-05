@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AndroidGraphs"
+        tools:targetApi="31">
+        <activity
+            android:name=".main.MainActivity"
+            android:exported="true"
+            android:theme="@style/Theme.AndroidGraphs">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.ai.engg.curves.x.y.examples.ABox" />
+        <activity android:name="com.ai.engg.curves.x.y.examples.TheRing" />
+        <activity android:name="com.ai.engg.curves.x.y.examples.ButterflyCurve" />
+        <activity android:name="com.ai.engg.curves.x.y.examples.ComplexDiamond" />
+        <activity android:name="com.ai.engg.curves.x.y.examples.ComplexIsometric" />
+        <activity android:name="com.ai.engg.curves.x.y.examples.ComplexIsoNotFilled" />
+        <activity android:name="com.ai.engg.curves.x.y.examples.CTest" />
+        <activity android:name="com.ai.engg.curves.x.y.examples.CurveTest" />
+        <activity android:name="com.ai.engg.curves.x.y.examples.EightBoxes" />
+        <activity android:name="com.ai.engg.curves.x.y.examples.ExComplexIsometric" />
+        <activity android:name="com.ai.engg.curves.x.y.examples.FilledPyramidDiamond" />
+        <activity android:name="com.ai.engg.curves.x.y.examples.FilledPyramidDiamond2" />
+        <activity android:name="com.ai.engg.curves.x.y.examples.FilledPyramidDiamond3" />
+        <activity android:name="com.ai.engg.curves.x.y.examples.FilledSimpleDiamond" />
+        <activity android:name="com.ai.engg.curves.x.y.examples.FourBoxes" />
+        <activity android:name="com.ai.engg.curves.x.y.examples.NothingInteresting" />
+        <activity android:name="com.ai.engg.curves.x.y.examples.NothingSpecialInThis" />
+        <activity android:name="com.ai.engg.curves.x.y.examples.OCirclesO" />
+        <activity android:name="com.ai.engg.curves.x.y.examples.ParabolaHyperbolaEllipse" />
+        <activity android:name="com.ai.engg.curves.x.y.examples.Protons" />
+        <activity android:name="com.ai.engg.curves.x.y.examples.PyramidDiamond" />
+        <activity android:name="com.ai.engg.curves.x.y.examples.SimpleDiamond" />
+        <activity android:name="com.ai.engg.curves.x.y.examples.SimpleIsoMetric" />
+        <activity android:name="com.ai.engg.curves.x.y.examples.SpiralTest1" />
+        <activity android:name="com.ai.engg.curves.x.y.examples.SpiralTest2" />
+        <activity android:name="com.ai.engg.curves.x.y.examples.SpiralTest3" />
+        <activity android:name="com.ai.engg.curves.x.y.examples.SpiralTest4" />
+        <activity android:name="com.ai.engg.curves.x.y.examples.SpiralTest5" />
+        <activity android:name="com.ai.engg.curves.x.y.examples.SpiralTest6" />
+        <activity android:name="com.ai.engg.curves.x.y.examples.SpiralTest7" />
+        <activity android:name="com.ai.engg.curves.x.y.examples.FirstIsoSpace" />
+        <activity android:name="com.ai.engg.curves.x.y.examples.EllipsesWithCircle" />
+        <activity android:name="com.ai.engg.curves.x.y.examples.TestBoxes" />
+        <activity android:name="com.ai.engg.curves.x.y.examples.SinCosTan" />
+        <activity android:name="com.ai.engg.curves.x.y.examples.Planets" />
+        <activity android:name="com.ai.engg.curves.x.y.examples.Uranus" />
+    </application>
+
+</manifest>

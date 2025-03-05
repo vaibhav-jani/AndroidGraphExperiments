@@ -3,14 +3,42 @@ Android Graphs Experiments
 
 Graphing experiments on Android.
 
-Here are few samples I plotted :
+Mathematics has always been fascinating, and the work of visual and recreational mathematicians is incredibly inspiring. Creators like Grant Sanderson (3Blue1Brown) and Khan Academy have played a huge role in shaping an intuitive understanding of mathematical concepts, making abstract ideas visually engaging and accessible.
+
+Android Graph Experiments is my first pet project, which I started during my internship at my first job while learning calculus, pre-calculus, and Android development. It reflects a deep interest in mathematical visualizations and function plotting.
+
+Features:
+
+- Function plotting with smooth rendering.
+- Support for various mathematical equations.
+- A dynamic and interactive graphing experience.
+
+---
+
+Example: Butterfly Curve
+
+One of the visually striking curves that can be plotted is the Butterfly Curve, defined by the parametric equations:
+
+
+$$
+x = \sin(t) \left(e^{\cos(t)} - 2\cos(4t) - \sin^5\left(\frac{t}{12}\right)\right)
+$$
+
+$$
+y = \cos(t) \left(e^{\cos(t)} - 2\cos(4t) - \sin^5\left(\frac{t}{12}\right)\right)
+$$
+
+![Butterfly Curve](examples-images/Butterfly_Screenshot_20250305_111808.png)
+
+---
+
+Here are few samples I plotted:
 
 ![Spiral Test Phone](examples-images/SpriralTest_Phone_Screenshot_20250305_182944.png)
 
+---
 
-(In 10" Tablet resolution 2560x1600): 
-
-![Butterfly Curve](examples-images/Butterfly_Screenshot_20250305_111808.png)
+Tablet (10" resolution 2560x1600):
 
 ![A Box](examples-images/ABox_Screenshot_20250305_111949.png)
 
@@ -76,7 +104,23 @@ Here are few samples I plotted :
 
 ![Complex ISO Perspective](examples-images/Perspective_ISO.png)
 
+---
 
+![License: WTFPL](https://img.shields.io/badge/License-WTFPL-brightgreen.svg)
+
+            DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
+                    Version 2, March 2025
+
+Copyright (C) YEAR vaibhav-jani <vaibhavaniljani@gmail.com>
+
+Everyone is permitted to copy and distribute verbatim or modified
+copies of this license document, and changing it is allowed as long
+as the name is changed.
+
+            DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
+TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION, AND MODIFICATION
+
+0. You just DO WHAT THE FUCK YOU WANT TO.
 
 
 

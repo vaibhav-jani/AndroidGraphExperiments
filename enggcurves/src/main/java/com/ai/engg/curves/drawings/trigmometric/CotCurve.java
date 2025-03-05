@@ -1,28 +1,29 @@
 package com.ai.engg.curves.drawings.trigmometric;
 
-import java.util.ArrayList;
 import com.ai.engg.curves.Curve;
 import com.ai.engg.curves.CurveAttributes;
 import com.ai.engg.curves.display.window.SurfacePoint;
 import com.ai.engg.curves.drawings.Drawing;
 
-public class CotCurve extends Drawing{
+import java.util.ArrayList;
 
-	private String color = "#FF0000";
+public class CotCurve extends Drawing {
 
-	public CotCurve(float start, float end) {
+    private String color = "#FF0000";
 
-		ArrayList<SurfacePoint> points = new ArrayList<SurfacePoint>();
+    public CotCurve(float start, float end) {
 
-		for(float i = start; i < end; i = i + 0.1f) {
-			float tan = (float)Math.tan(i);
-			if(tan != 0) points.add(new SurfacePoint(i, 1/tan));
-		}
+        ArrayList<SurfacePoint> points = new ArrayList<SurfacePoint>();
 
-		CurveAttributes defAttribs = new CurveAttributes();
-		defAttribs.setPathColor(color);
-		defAttribs.setDrawPoints(false);
+        for (float i = start; i < end; i = i + 0.1f) {
+            float tan = (float) Math.tan(i);
+            if (tan != 0) points.add(new SurfacePoint(i, 1 / tan));
+        }
 
-		curves.add(new Curve(points, defAttribs));
-	}
+        CurveAttributes defAttribs = new CurveAttributes();
+        defAttribs.setPathColor(color);
+        defAttribs.setDrawPoints(false);
+
+        curves.add(new Curve(points, defAttribs));
+    }
 }

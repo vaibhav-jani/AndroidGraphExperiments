@@ -105,22 +105,14 @@ Tablet (10" resolution 2560x1600):
 ![Complex ISO Perspective](examples-images/Perspective_ISO.png)
 
 ---
+          MIT License  
 
-![License: WTFPL](https://img.shields.io/badge/License-WTFPL-brightgreen.svg)
+Copyright (c) [2025] [Vaibhav Jani]
 
-            DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
-                    Version 2, March 2025
+Permission is hereby granted, free of charge, to any person obtaining a copy  
+of this software...
 
-Copyright (C) 2025 vaibhav-jani <vaibhavaniljani@gmail.com>
-
-Everyone is permitted to copy and distribute verbatim or modified
-copies of this license document, and changing it is allowed as long
-as the name is changed.
-
-            DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
-TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION, AND MODIFICATION
-
-0. You just DO WHAT THE FUCK YOU WANT TO.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND...
 
 
 

@@ -1,40 +1,82 @@
-AndroidGraphExperiments
-=======================
+Android Graphs Experiments
+==========================
 
 Graphing experiments on Android.
 
 Here are few samples I plotted :
 
-![Spiral](https://i.stack.imgur.com/Xq1BO.png)
+![Spiral Test Phone](examples-images/SpriralTest_Phone_Screenshot_20250305_182944.png)
 
 
-(In 10" Tablet resolution 1280x800): 
+(In 10" Tablet resolution 2560x1600): 
 
-![Butterfly Curve](https://i.stack.imgur.com/MVjO6.png)
+![Butterfly Curve](examples-images/Butterfly_Screenshot_20250305_111808.png)
 
-![Spiral1](https://i.stack.imgur.com/IOlkv.png)
+![A Box](examples-images/ABox_Screenshot_20250305_111949.png)
 
-![Universe1](https://i.stack.imgur.com/gmcvi.png)
+![Complex Diamond](examples-images/ComplexDiamond_Screenshot_20250305_112422.png)
 
-![Piramid1](https://i.stack.imgur.com/rgB1t.png)
+![Eight Boxes](examples-images/EightBoxes_Screenshot_20250305_113558.png)
 
-![Diamond](https://lh3.googleusercontent.com/-Ew_JaW5P9t8/UJt2TgN3mRI/AAAAAAAABCw/DvAw5kT_3y4/w1092-h683-no/2.png)
+![First ISO Space](examples-images/FirstIsoSpace_Screenshot_20250305_122818.png)
 
-![Curves](https://i.stack.imgur.com/5EHRb.png)
+![Four adjacent boxes](examples-images/FourAdjacentBoxes_Screenshot_20250305_172154.png)
 
-![Trignometry](https://i.stack.imgur.com/PdUUO.png)
+![Four stack boxes](examples-images/FourStackBoxes_Screenshot_20250305_172123.png)
+
+![Test Boxes](examples-images/Test_Boxes_Screenshot_20250305_122632.png)
+
+![Two Nested Boxes](examples-images/TwoNestedBoxes_Screenshot_20250305_171943.png)
+
+![O Circles](examples-images/OCircleO_Screenshot_20250305_171857.png)
+
+![Parabola Hyperbola Ellipse](examples-images/Parabola_Hyperbola_Ellipse_Screenshot_20250305_171733.png)
+
+![Protons](examples-images/Protons_Screenshot_20250305_171658.png)
+
+![Pyramid Diamond](examples-images/PyramidDiamond_Screenshot_20250305_171541.png)
+
+![Simple Diamond](examples-images/SimpleDiamond_Screenshot_20250305_171804.png)
+
+![Ellipses With Circle](examples-images/EllipsesWithCircle_Screenshot_20250305_122711.png)
+
+![Filled Pyramid Diamond 3](examples-images/Filled_Pyramid_Diamond3_Screenshot_20250305_122006.png)
+
+![Filled Pyramid Diamond 2](examples-images/Filled_Pyramid_Diamonds_Screenshot_20250305_121637.png)
+
+![Sin Cos Tan](examples-images/SinCosTan_Screenshot_20250305_122548.png)
+
+![Curve Test 2](examples-images/CTest_Screenshot_20250305_113251.png)
+
+![Spiral1](examples-images/Spiral1_Screenshot_20250305_123335.png)
+
+![Spiral2](examples-images/Spiral2_Screenshot_20250305_123358.png)
+
+![Spiral3](examples-images/Spiral3_Screenshot_20250305_123417.png)
+
+![Spiral4](examples-images/Spiral4_Screenshot_20250305_123534.png)
+
+![Spiral5](examples-images/Spiral5_Screenshot_20250305_123555.png)
+
+![Spiral6](examples-images/Spiral6_Screenshot_20250305_123619.png)
+
+![Spiral7](examples-images/Spiral7_Screenshot_20250305_123637.png)
+
+![The Ring](examples-images/TheRing_Screenshot_20250305_111857.png)
+
+![Uranus](examples-images/Uranus_Screenshot_20250305_122433.png)
+
+![Planets](examples-images/Planets_Screenshot_20250305_122522.png)
+
+![Complex ISO Empty](examples-images/Complex_ISO_Empty_Screenshot_20250305_112801.png)
+
+![Complex ISO](examples-images/Complex_ISO_Screenshot_20250305_112644.png)
+
+![X Complex ISO](examples-images/X_Complex_Screenshot_20250305_121413.png)
+
+![Complex ISO Perspective](examples-images/Perspective_ISO.png)
 
 
-![Rounds](https://i.stack.imgur.com/DJp4O.png)
 
-![Thunder](https://lh6.googleusercontent.com/-G3myLas4W58/U9IzfwiWvjI/AAAAAAAABmI/KbgkKPh-QdI/w1092-h683-no/device-2014-07-11-144342.png)
 
-![Boxes](https://i.stack.imgur.com/1YVqH.png55721.png)
 
-![MoewBoxes](https://i.stack.imgur.com/IwVOB.png)
-
-![ISO](https://lh6.googleusercontent.com/-U6K1bV5xSdU/U9IzhBXXjjI/AAAAAAAABmg/8UJC7rYjON8/w1092-h683-no/device-2014-07-25-155832.png)
-
-![Isonetric](https://i.stack.imgur.com/pM0Pa.png)
-
-![Screen](http://i.stack.imgur.com/NPlTb.png)

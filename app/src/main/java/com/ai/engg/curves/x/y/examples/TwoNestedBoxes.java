@@ -14,7 +14,7 @@ import com.ai.engg.curves.drawings.Drawing;
 
 import java.util.ArrayList;
 
-public class NothingSpecialInThis extends Activity {
+public class TwoNestedBoxes extends Activity {
 
     /**
      * Called when the activity is first created.

@@ -36,8 +36,8 @@
         <activity android:name="com.ai.engg.curves.x.y.examples.FilledPyramidDiamond3" />
         <activity android:name="com.ai.engg.curves.x.y.examples.FilledSimpleDiamond" />
         <activity android:name="com.ai.engg.curves.x.y.examples.FourBoxes" />
-        <activity android:name="com.ai.engg.curves.x.y.examples.NothingInteresting" />
-        <activity android:name="com.ai.engg.curves.x.y.examples.NothingSpecialInThis" />
+        <activity android:name="com.ai.engg.curves.x.y.examples.FourBoxesStacked" />
+        <activity android:name="com.ai.engg.curves.x.y.examples.TwoNestedBoxes" />
         <activity android:name="com.ai.engg.curves.x.y.examples.OCirclesO" />
         <activity android:name="com.ai.engg.curves.x.y.examples.ParabolaHyperbolaEllipse" />
         <activity android:name="com.ai.engg.curves.x.y.examples.Protons" />

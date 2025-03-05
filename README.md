@@ -111,7 +111,7 @@ Tablet (10" resolution 2560x1600):
             DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
                     Version 2, March 2025
 
-Copyright (C) YEAR vaibhav-jani <vaibhavaniljani@gmail.com>
+Copyright (C) 2025 vaibhav-jani <vaibhavaniljani@gmail.com>
 
 Everyone is permitted to copy and distribute verbatim or modified
 copies of this license document, and changing it is allowed as long

@@ -105,14 +105,9 @@ Tablet (10" resolution 2560x1600):
 ![Complex ISO Perspective](examples-images/Perspective_ISO.png)
 
 ---
-          MIT License  
 
-Copyright (c) [2025] [Vaibhav Jani]
+[MIT License](/LICENSE.md)  
 
-Permission is hereby granted, free of charge, to any person obtaining a copy  
-of this software...
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND...
 
 
 

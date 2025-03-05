@@ -11,7 +11,7 @@ import com.ai.engg.curves.drawings.boxes.filledboxes.FilledBox;
 
 import java.util.ArrayList;
 
-public class NothingInteresting extends Activity {
+public class FourBoxesStacked extends Activity {
 
     /**
      * Called when the activity is first created.

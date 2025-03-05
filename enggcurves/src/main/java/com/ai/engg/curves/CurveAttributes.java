@@ -1,54 +1,54 @@
 package com.ai.engg.curves;
 
 public class CurveAttributes {
-		
-	private String pathColor = "#0000FF"; 
-	private String pointColor = "#FF0000";
-	private boolean drawPoints = true;
-	//private boolean isDotted = false;
-	
-	private float strokeWidthOfPath = 2;
-	private float radiusOfPoints = 2;
-	
-	public String getPathColor() {
-		return pathColor;
-	}
 
-	public void setPathColor(String pathColor) {
-		this.pathColor = pathColor;
-	}
+    private String pathColor = "#0000FF";
+    private String pointColor = "#FF0000";
+    private boolean drawPoints = true;
+    //private boolean isDotted = false;
 
-	public String getPointColor() {
-		return pointColor;
-	}
+    private float strokeWidthOfPath = 2;
+    private float radiusOfPoints = 2;
 
-	public void setPointColor(String pointColor) {
-		this.pointColor = pointColor;
-	}
+    public String getPathColor() {
+        return pathColor;
+    }
 
-	public float getStrokeWidthOfPath() {
-		return strokeWidthOfPath;
-	}
+    public void setPathColor(String pathColor) {
+        this.pathColor = pathColor;
+    }
 
-	public void setStrokeWidthOfPath(float strokeWidthOfPath) {
-		this.strokeWidthOfPath = strokeWidthOfPath;
-	}
+    public String getPointColor() {
+        return pointColor;
+    }
 
-	public float getRadiusOfPoints() {
-		return radiusOfPoints;
-	}
+    public void setPointColor(String pointColor) {
+        this.pointColor = pointColor;
+    }
 
-	public void setRadiusOfPoints(float radiusOfPoints) {
-		this.radiusOfPoints = radiusOfPoints;
-	}
+    public float getStrokeWidthOfPath() {
+        return strokeWidthOfPath;
+    }
 
-	public void setDrawPoints(boolean drawPoints) {
-		this.drawPoints = drawPoints;
-	}
+    public void setStrokeWidthOfPath(float strokeWidthOfPath) {
+        this.strokeWidthOfPath = strokeWidthOfPath;
+    }
 
-	public boolean isDrawPoints() {
-		return drawPoints;
-	}
+    public float getRadiusOfPoints() {
+        return radiusOfPoints;
+    }
+
+    public void setRadiusOfPoints(float radiusOfPoints) {
+        this.radiusOfPoints = radiusOfPoints;
+    }
+
+    public boolean isDrawPoints() {
+        return drawPoints;
+    }
+
+    public void setDrawPoints(boolean drawPoints) {
+        this.drawPoints = drawPoints;
+    }
 
 	/*public void setDotted(boolean isDotted) {
 		this.isDotted = isDotted;

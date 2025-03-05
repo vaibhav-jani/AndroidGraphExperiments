@@ -1,11 +1,11 @@
 package com.ai.engg.curves.drawings.boxes.filledboxes;
 
-import java.util.ArrayList;
-
 import com.ai.engg.curves.Curve;
 import com.ai.engg.curves.CurveAttributes;
 import com.ai.engg.curves.display.window.SurfacePoint;
 import com.ai.engg.curves.drawings.boxes.Box;
+
+import java.util.ArrayList;
 
 public class FilledBox extends Box {
 

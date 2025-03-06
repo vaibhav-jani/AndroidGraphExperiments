@@ -8,9 +8,9 @@ import android.view.WindowManager;
 import com.ai.engg.curves.display.window.SurfaceAttributes;
 import com.ai.engg.curves.display.window.SurfaceRenderer;
 import com.ai.engg.curves.drawings.Drawing;
-import com.ai.engg.curves.drawings.enggcurves.Ellipse;
-import com.ai.engg.curves.drawings.enggcurves.Hyperbola;
-import com.ai.engg.curves.drawings.enggcurves.Parabola;
+import com.ai.engg.curves.drawings.conic.sections.Ellipse;
+import com.ai.engg.curves.drawings.conic.sections.Hyperbola;
+import com.ai.engg.curves.drawings.conic.sections.Parabola;
 
 import java.util.ArrayList;
 

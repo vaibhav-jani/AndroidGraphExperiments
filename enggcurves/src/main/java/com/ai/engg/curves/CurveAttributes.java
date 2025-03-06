@@ -3,11 +3,16 @@ package com.ai.engg.curves;
 public class CurveAttributes {
 
     private String pathColor = "#0000FF";
+
+    // TODO Points needs it's individual drawing configuration
+    //  Points of curve may or may not be homogeneous styles
     private String pointColor = "#FF0000";
+
     private boolean drawPoints = true;
     //private boolean isDotted = false;
 
     private float strokeWidthOfPath = 2;
+
     private float radiusOfPoints = 2;
 
     public String getPathColor() {

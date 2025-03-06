@@ -12,8 +12,8 @@ public class OpenBox extends Box {
     public void draw() {
 
         curves.add(getLine(bl, br));
-        //curves.add(getLine(br, tr));
-        //curves.add(getLine(tr, tl));
+        // curves.add(getLine(br, tr));
+        // curves.add(getLine(tr, tl));
         curves.add(getLine(tl, bl));
 
         curves.add(getLine(blr, brr));
@@ -23,7 +23,7 @@ public class OpenBox extends Box {
 
         curves.add(getLine(bl, blr));
         curves.add(getLine(br, brr));
-        //curves.add(getLine(tr, trr));
+        // curves.add(getLine(tr, trr));
         curves.add(getLine(tl, tlr));
     }
 }

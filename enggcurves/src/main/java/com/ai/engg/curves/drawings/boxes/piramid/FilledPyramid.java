@@ -1,7 +1,7 @@
 package com.ai.engg.curves.drawings.boxes.piramid;
 
 import com.ai.engg.curves.display.window.SurfacePoint;
-import com.ai.engg.curves.drawings.boxes.filledboxes.FilledBox;
+import com.ai.engg.curves.drawings.boxes.filled.FilledBox;
 
 public class FilledPyramid extends FilledBox {
 
@@ -10,7 +10,14 @@ public class FilledPyramid extends FilledBox {
 
     int direction = TOP;
 
-    public FilledPyramid(float len, float wid, float dep, float start_x, float start_y, int direction) {
+    public FilledPyramid(
+            float len,
+            float wid,
+            float dep,
+            float start_x,
+            float start_y,
+            int direction
+    ) {
         super(len, wid, dep, start_x, start_y);
         this.direction = direction;
         draw(direction);
@@ -33,10 +40,7 @@ public class FilledPyramid extends FilledBox {
     }
 
     protected void fillTop(int direction) {
-
-        if (direction == TOP) {
-
-        } else {
+        if (direction != TOP) {
             super.fillTop();
         }
     }
@@ -49,7 +53,10 @@ public class FilledPyramid extends FilledBox {
             float count = Math.abs((start - end) / 2);
 
             for (float i = 0; i <= count; i++) {
-                curves.add(getColorLine(new SurfacePoint(getTopCenter().x, getTopCenter().y), new SurfacePoint(bl.x + (2 * i), bl.y), frontColor));
+                SurfacePoint topCenter = getTopCenter();
+                SurfacePoint p1 = new SurfacePoint(topCenter.x, topCenter.y);
+                SurfacePoint p2 = new SurfacePoint(bl.x + (2 * i), bl.y);
+                curves.add(getColorLine(p1, p2, frontColor));
             }
         } else {
             float start = tl.x + 2;
@@ -57,7 +64,10 @@ public class FilledPyramid extends FilledBox {
             float count = Math.abs((start - end) / 2);
 
             for (float i = 0; i <= count; i++) {
-                curves.add(getColorLine(new SurfacePoint(getBottomCenter().x, getBottomCenter().y), new SurfacePoint(tl.x + (2 * i), tl.y), frontColor));
+                SurfacePoint bottomCenter = getBottomCenter();
+                SurfacePoint p1 = new SurfacePoint(bottomCenter.x, bottomCenter.y);
+                SurfacePoint p2 = new SurfacePoint(tl.x + (2 * i), tl.y);
+                curves.add(getColorLine(p1, p2, frontColor));
             }
         }
     }
@@ -69,14 +79,20 @@ public class FilledPyramid extends FilledBox {
             float end = brr.x;
             float count = Math.abs((start - end) / 2);
             for (float i = 0; i <= count; i++) {
-                curves.add(getColorLine(new SurfacePoint(getTopCenter().x, getTopCenter().y), new SurfacePoint(br.x + (2 * i), br.y + (2 * i)), sideColor));
+                SurfacePoint topCenter = getTopCenter();
+                SurfacePoint p1 = new SurfacePoint(topCenter.x, topCenter.y);
+                SurfacePoint p2 = new SurfacePoint(br.x + (2 * i), br.y + (2 * i));
+                curves.add(getColorLine(p1, p2, sideColor));
             }
         } else {
             float start = tr.x + 2;
             float end = trr.x;
             float count = Math.abs((start - end) / 2);
             for (float i = 0; i <= count; i++) {
-                curves.add(getColorLine(new SurfacePoint(getBottomCenter().x, getBottomCenter().y), new SurfacePoint(tr.x + (2 * i), tr.y + (2 * i)), sideColor));
+                SurfacePoint bottomCenter = getBottomCenter();
+                SurfacePoint p1 = new SurfacePoint(bottomCenter.x, bottomCenter.y);
+                SurfacePoint p2 = new SurfacePoint(tr.x + (2 * i), tr.y + (2 * i));
+                curves.add(getColorLine(p1, p2, sideColor));
             }
         }
     }
@@ -101,5 +117,26 @@ public class FilledPyramid extends FilledBox {
         fillSide(direction);
 
         super.draw();
+    }
+
+    @Override
+    public void setFrontColor(String frontColor) {
+        this.frontColor = frontColor;
+        curves.clear();
+        draw(direction);
+    }
+
+    @Override
+    public void setSideColor(String sideColor) {
+        this.sideColor = sideColor;
+        curves.clear();
+        draw(direction);
+    }
+
+    @Override
+    public void setTopColor(String topColor) {
+        this.topColor = topColor;
+        curves.clear();
+        draw(direction);
     }
 }

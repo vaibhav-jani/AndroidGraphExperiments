@@ -12,7 +12,7 @@ import com.ai.engg.curves.drawings.boxes.filled.FilledBox;
 
 import java.util.ArrayList;
 
-public class EightBoxes extends Activity {
+public class EightBoxesColored extends Activity {
 
     /**
      * Called when the activity is first created.
@@ -39,6 +39,11 @@ public class EightBoxes extends Activity {
         FilledBox box6 = new FilledBox(l1, w1, -d1, box2.getBr().x, box2.getBr().y);
         FilledBox box7 = new FilledBox(l1, -w1, d1, box4.getBlr().x, box4.getBlr().y);
         FilledBox box8 = new FilledBox(-l1, -w1, -d1, box3.getBl().x, box3.getBl().y);
+
+        box8.setSideColor("#ffff00");
+        box8.setTopColor("#ff00ff");
+        box8.setFrontColor("#00ffff");
+        box8.setColor("#000000");
 
         ArrayList<Drawing> drawings = new ArrayList<Drawing>();
         drawings.add(box);

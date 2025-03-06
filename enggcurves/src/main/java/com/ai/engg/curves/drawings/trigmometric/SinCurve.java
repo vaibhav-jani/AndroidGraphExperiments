@@ -9,10 +9,17 @@ import java.util.ArrayList;
 
 public class SinCurve extends Drawing {
 
+    private final float start;
+    private final float end;
     private String color = "#aa0000FF";
 
     public SinCurve(float start, float end) {
+        this.start = start;
+        this.end = end;
+        draw();
+    }
 
+    private void draw() {
         ArrayList<SurfacePoint> points = new ArrayList<SurfacePoint>();
 
         for (float i = start; i < end; i = i + 0.1f) {
@@ -24,5 +31,19 @@ public class SinCurve extends Drawing {
         defAttribs.setDrawPoints(false);
 
         curves.add(new Curve(points, defAttribs));
+    }
+
+    public String getColor() {
+        return color;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+        redraw();
+    }
+
+    private void redraw() {
+        curves.clear();
+        draw();
     }
 }

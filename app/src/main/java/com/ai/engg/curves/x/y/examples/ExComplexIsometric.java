@@ -9,7 +9,7 @@ import com.ai.engg.curves.display.window.SurfaceAttributes;
 import com.ai.engg.curves.display.window.SurfaceRenderer;
 import com.ai.engg.curves.drawings.Drawing;
 import com.ai.engg.curves.drawings.boxes.ExBox;
-import com.ai.engg.curves.drawings.boxes.filledboxes.FilledOpenBox;
+import com.ai.engg.curves.drawings.boxes.filled.FilledOpenBox;
 
 import java.util.ArrayList;
 
@@ -59,7 +59,7 @@ public class ExComplexIsometric extends Activity {
         ExBox box5 = new ExBox(l * 3, -w * 3, d * 3, box26.getBl().x, box26.getBl().y);
 
         ArrayList<Drawing> drawings = new ArrayList<Drawing>();
-        //drawings.add(box);
+        // drawings.add(box);
         drawings.add(box1);
         drawings.add(box2);
         drawings.add(box3);

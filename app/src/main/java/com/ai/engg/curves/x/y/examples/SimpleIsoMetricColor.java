@@ -14,7 +14,7 @@ import com.ai.engg.curves.drawings.boxes.OpenBox;
 
 import java.util.ArrayList;
 
-public class SimpleIsoMetric extends Activity {
+public class SimpleIsoMetricColor extends Activity {
 
     /**
      * Called when the activity is first created.
@@ -42,6 +42,7 @@ public class SimpleIsoMetric extends Activity {
         Box box9 = new Box(l * 4, w * 3, d * 3, box8.getTopCenter().x, box8.getTopCenter().y);
         Box box10 = new Box(l * 3, w * 2, d * 2, box9.getTopCenter().x, box9.getTopCenter().y);
 
+        box1.setColor("#ff0000");
         ArrayList<Drawing> drawings = new ArrayList<>();
         drawings.add(box);
         drawings.add(box1);

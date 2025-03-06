@@ -57,6 +57,8 @@
         <activity android:name="com.ai.engg.curves.x.y.examples.SinCosTan" />
         <activity android:name="com.ai.engg.curves.x.y.examples.Planets" />
         <activity android:name="com.ai.engg.curves.x.y.examples.Uranus" />
+        <activity android:name="com.ai.engg.curves.x.y.examples.SimpleIsoMetricColor" />
+        <activity android:name="com.ai.engg.curves.x.y.examples.EightBoxesColored" />
     </application>
 
 </manifest>

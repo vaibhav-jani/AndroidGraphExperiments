@@ -36,4 +36,11 @@ public class Pyramid extends Box {
         }
         super.draw();
     }
+
+    @Override
+    public void setColor(String color) {
+        this.color = color;
+        curves.clear();
+        draw(direction);
+    }
 }

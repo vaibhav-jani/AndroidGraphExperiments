@@ -107,7 +107,7 @@ Tablet (10" resolution 2560x1600):
 
 ![Complex ISO](examples-images/Complex_ISO_Screenshot_20250305_112644.png)
 
-![X Complex ISO](examples-images/X_Complex_Screenshot_20250305_121413.png)
+![X Complex ISO](examples-images/GreenRedCrossBox_Screenshot_20250306_161700.png)
 
 ![Complex ISO Perspective](examples-images/Perspective_ISO.png)
 

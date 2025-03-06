@@ -1,4 +1,4 @@
-package com.ai.engg.curves.drawings.enggcurves;
+package com.ai.engg.curves.drawings.conic.sections;
 
 import com.ai.engg.curves.Curve;
 import com.ai.engg.curves.CurveAttributes;
@@ -14,16 +14,31 @@ public class Hyperbola extends Drawing {
     public static int NEGATIVE_Y = 2;
     public static int POSITIVE_Y = 3;
 
-    private static String color = "#00FF00";
-
+    private String color = "#00FF00";
+    private final int x0;
+    private final int yo;
+    private final int start;
+    private final int end;
+    private final int a;
+    private final int b;
+    private final int direction;
 
     public Hyperbola(int x0, int yo, int start, int end, int a, int b, int direction) {
+        this.x0 = x0;
+        this.yo = yo;
+        this.start = start;
+        this.end = end;
+        this.a = a;
+        this.b = b;
+        this.direction = direction;
+        draw();
+    }
 
+    private void draw() {
         curves.add(getCurve(x0, yo, start, end, a, b, direction));
     }
 
-    public static Curve getCurve(int x0, int yo, int start, int end, int a, int b, int direction) {
-
+    public Curve getCurve(int x0, int yo, int start, int end, int a, int b, int direction) {
         if (end < start) {
             int temp = start;
             start = end;
@@ -53,5 +68,19 @@ public class Hyperbola extends Drawing {
         defAttribs.setPathColor(color);
         defAttribs.setDrawPoints(false);
         return new Curve(points, defAttribs);
+    }
+
+    public Curve getCurve() {
+        return curves.get(0);
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+        redraw();
+    }
+
+    private void redraw() {
+        curves.clear();
+        draw();
     }
 }

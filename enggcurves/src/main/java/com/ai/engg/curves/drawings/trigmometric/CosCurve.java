@@ -9,10 +9,17 @@ import java.util.ArrayList;
 
 public class CosCurve extends Drawing {
 
-    private String color = "#660000FF";
+    private final float start;
+    private final float end;
+    private String color = "#0000FF";
 
     public CosCurve(float start, float end) {
+        this.start = start;
+        this.end = end;
+        draw();
+    }
 
+    private void draw() {
         ArrayList<SurfacePoint> points = new ArrayList<SurfacePoint>();
 
         for (float i = start; i < end; i = i + 0.1f) {
@@ -24,5 +31,19 @@ public class CosCurve extends Drawing {
         defAttribs.setDrawPoints(false);
 
         curves.add(new Curve(points, defAttribs));
+    }
+
+    public String getColor() {
+        return color;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+        redraw();
+    }
+
+    private void redraw() {
+        curves.clear();
+        draw();
     }
 }

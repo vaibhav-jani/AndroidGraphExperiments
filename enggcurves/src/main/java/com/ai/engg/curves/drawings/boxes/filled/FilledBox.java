@@ -1,4 +1,4 @@
-package com.ai.engg.curves.drawings.boxes.filledboxes;
+package com.ai.engg.curves.drawings.boxes.filled;
 
 import com.ai.engg.curves.Curve;
 import com.ai.engg.curves.CurveAttributes;
@@ -9,6 +9,7 @@ import java.util.ArrayList;
 
 public class FilledBox extends Box {
 
+    // TODO Fix hard-coded colors
     protected String frontColor = "#450000FF";
     protected String sideColor = "#300000FF";
     protected String topColor = "#150000FF";
@@ -21,7 +22,6 @@ public class FilledBox extends Box {
             float start_y
     ) {
         super(len, wid, dep, start_x, start_y);
-
         fillFront();
         fillTop();
         fillSide();
@@ -35,31 +35,13 @@ public class FilledBox extends Box {
         curves.add(getLine(tr, tl));
         curves.add(getLine(tl, bl));
 
-        //curves.add(getDottedLine(blr, brr));
         curves.add(getLine(brr, trr));
         curves.add(getLine(trr, tlr));
-        //curves.add(getDottedLine(tlr, blr));
 
-        //curves.add(getDottedLine(bl, blr));
         curves.add(getLine(br, brr));
         curves.add(getLine(tr, trr));
         curves.add(getLine(tl, tlr));
     }
-	
-	/*protected Curve getDottedLine(SurfacePoint bl, SurfacePoint br) {
-
-		CurveAttributes defAttribs = new CurveAttributes();
-		defAttribs.setPathColor(color);
-		defAttribs.setDrawPoints(false);
-		defAttribs.setDotted(true);
-
-		ArrayList<SurfacePoint> blbr = new ArrayList<SurfacePoint>();
-		blbr.add(bl);
-		blbr.add(br);
-
-		Curve line = new Curve(blbr, defAttribs);
-		return line;
-	}*/
 
     protected void fillSide() {
 
@@ -67,7 +49,9 @@ public class FilledBox extends Box {
         float end = brr.x;
         float count = Math.abs((start - end) / 2);
         for (float i = 0; i <= count; i++) {
-            curves.add(getColorLine(new SurfacePoint(tr.x + (2 * i), tr.y + (2 * i)), new SurfacePoint(br.x + (2 * i), br.y + (2 * i)), sideColor));
+            SurfacePoint p1 = new SurfacePoint(tr.x + (2 * i), tr.y + (2 * i));
+            SurfacePoint p2 = new SurfacePoint(br.x + (2 * i), br.y + (2 * i));
+            curves.add(getColorLine(p1, p2, sideColor));
         }
     }
 
@@ -77,7 +61,9 @@ public class FilledBox extends Box {
         float end = tr.x;
         float count = Math.abs((start - end) / 2);
         for (float i = 0; i <= count; i++) {
-            curves.add(getColorLine(new SurfacePoint(tl.x + (2 * i), tl.y), new SurfacePoint(tlr.x + (2 * i), tlr.y), topColor));
+            SurfacePoint p1 = new SurfacePoint(tl.x + (2 * i), tl.y);
+            SurfacePoint p2 = new SurfacePoint(tlr.x + (2 * i), tlr.y);
+            curves.add(getColorLine(p1, p2, topColor));
         }
     }
 
@@ -88,7 +74,9 @@ public class FilledBox extends Box {
         float count = Math.abs((start - end) / 2);
 
         for (float i = 0; i <= count; i++) {
-            curves.add(getColorLine(new SurfacePoint(tl.x + (2 * i), tl.y), new SurfacePoint(bl.x + (2 * i), bl.y), frontColor));
+            SurfacePoint p1 = new SurfacePoint(tl.x + (2 * i), tl.y);
+            SurfacePoint p2 = new SurfacePoint(bl.x + (2 * i), bl.y);
+            curves.add(getColorLine(p1, p2, frontColor));
         }
     }
 
@@ -104,5 +92,44 @@ public class FilledBox extends Box {
 
         Curve line = new Curve(blbr, defAttribs);
         return line;
+    }
+
+    public String getFrontColor() {
+        return frontColor;
+    }
+
+    public void setFrontColor(String frontColor) {
+        this.frontColor = frontColor;
+        // TODO fix bad hack
+        redraw();
+    }
+
+    public String getSideColor() {
+        return sideColor;
+    }
+
+    public void setSideColor(String sideColor) {
+        this.sideColor = sideColor;
+        // TODO fix bad hack
+        redraw();
+    }
+
+    public String getTopColor() {
+        return topColor;
+    }
+
+    public void setTopColor(String topColor) {
+        this.topColor = topColor;
+        // TODO fix bad hack
+        redraw();
+    }
+
+    private void redraw() {
+        // TODO fix bad hack
+        curves.clear();
+        draw();
+        fillFront();
+        fillTop();
+        fillSide();
     }
 }

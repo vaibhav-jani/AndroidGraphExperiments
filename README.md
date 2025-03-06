@@ -79,7 +79,7 @@ Tablet (10" resolution 2560x1600):
 
 ![Filled Pyramid Diamond 2](examples-images/Filled_Pyramid_Diamonds_Screenshot_20250305_121637.png)
 
-![Sin Cos Tan](examples-images/SinCosTan_Screenshot_20250305_122548.png)
+![Sin Cos Tan](examples-images/SinCosTan_Color_Screenshot_20250306_220712.png)
 
 ![Curve Test 2](examples-images/CTest_Screenshot_20250305_113251.png)
 
@@ -108,6 +108,8 @@ Tablet (10" resolution 2560x1600):
 ![Complex ISO](examples-images/Complex_ISO_Screenshot_20250305_112644.png)
 
 ![X Complex ISO](examples-images/GreenRedCrossBox_Screenshot_20250306_161700.png)
+
+![Simple ISO Multicolor](examples-images/Simple_ISO_Multi_color_Screenshot_20250306_215604.png)
 
 ![Complex ISO Perspective](examples-images/Perspective_ISO.png)
 

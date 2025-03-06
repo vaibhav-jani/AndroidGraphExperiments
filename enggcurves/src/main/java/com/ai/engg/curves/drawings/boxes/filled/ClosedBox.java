@@ -1,4 +1,4 @@
-package com.ai.engg.curves.drawings.boxes.filledboxes;
+package com.ai.engg.curves.drawings.boxes.filled;
 
 public class ClosedBox extends FilledBox {
 

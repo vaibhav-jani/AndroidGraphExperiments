@@ -8,7 +8,7 @@ import android.view.WindowManager;
 import com.ai.engg.curves.display.window.SurfaceAttributes;
 import com.ai.engg.curves.display.window.SurfaceRenderer;
 import com.ai.engg.curves.drawings.Drawing;
-import com.ai.engg.curves.drawings.boxes.filledboxes.FilledBox;
+import com.ai.engg.curves.drawings.boxes.filled.FilledBox;
 
 import java.util.ArrayList;
 

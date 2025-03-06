@@ -9,6 +9,8 @@ import java.util.ArrayList;
 
 public class Box extends Drawing {
 
+    // TODO: Bad hack, it should be exclusively 
+    //  handled on individual curves level
     protected String color = "#0000FF";
 
     protected float width = 1;
@@ -117,7 +119,7 @@ public class Box extends Drawing {
     }
 
     /**
-     * @return The Front center
+     * @return  Front center
      */
     public SurfacePoint getFrontCenter() {
 
@@ -125,7 +127,7 @@ public class Box extends Drawing {
     }
 
     /**
-     * @return The Rear center
+     * @return  Rear center
      */
     public SurfacePoint getRearCenter() {
 
@@ -133,7 +135,7 @@ public class Box extends Drawing {
     }
 
     /**
-     * @return The Left center
+     * @return  Left center
      */
     public SurfacePoint getLeftCenter() {
 
@@ -141,7 +143,7 @@ public class Box extends Drawing {
     }
 
     /**
-     * @return The Right center
+     * @return  Right center
      */
     public SurfacePoint getRightCenter() {
 
@@ -149,7 +151,7 @@ public class Box extends Drawing {
     }
 
     /**
-     * @return The Top center
+     * @return  Top center
      */
     public SurfacePoint getTopCenter() {
 
@@ -157,7 +159,7 @@ public class Box extends Drawing {
     }
 
     /**
-     * @return The Top center
+     * @return  Top center
      */
     public SurfacePoint getBottomCenter() {
 
@@ -175,157 +177,164 @@ public class Box extends Drawing {
      */
     public void setColor(String color) {
         this.color = color;
+        
+        // TODO Bad hack,
+        //  have to separate drawing from constructing 
+        //  also Box and Pyramid and Box 
+        //  inheritance need to change with something like shape builder 
+        curves.clear();
+        draw();
     }
 
     /**
-     * @return The bl : Bottom-Left-Front point of box
+     * @return  bl : Bottom-Left-Front point of box
      */
     public SurfacePoint getBl() {
         return bl;
     }
 
     /**
-     * @param The bl : Bottom-Left-Front point of box
+     * @param  bl : Bottom-Left-Front point of box
      */
     public void setBl(SurfacePoint bl) {
         this.bl = bl;
     }
 
     /**
-     * @return The br : Bottom-Right-Front point of box
+     * @return  br : Bottom-Right-Front point of box
      */
     public SurfacePoint getBr() {
         return br;
     }
 
     /**
-     * @param The br : Bottom-Right-Front point of box
+     * @param  br : Bottom-Right-Front point of box
      */
     public void setBr(SurfacePoint br) {
         this.br = br;
     }
 
     /**
-     * @return The tr : Top-Right-Front point of box
+     * @return  tr : Top-Right-Front point of box
      */
     public SurfacePoint getTr() {
         return tr;
     }
 
     /**
-     * @param The tr : Top-Right-Front point of box
+     * @param  tr : Top-Right-Front point of box
      */
     public void setTr(SurfacePoint tr) {
         this.tr = tr;
     }
 
     /**
-     * @return The tl : Top-Left-Front point of box
+     * @return  tl : Top-Left-Front point of box
      */
     public SurfacePoint getTl() {
         return tl;
     }
 
     /**
-     * @param The tl : Top-Left-Front point of box
+     * @param  tl : Top-Left-Front point of box
      */
     public void setTl(SurfacePoint tl) {
         this.tl = tl;
     }
 
     /**
-     * @return The blr : Bottom-Left-Rear point of box
+     * @return  blr : Bottom-Left-Rear point of box
      */
     public SurfacePoint getBlr() {
         return blr;
     }
 
     /**
-     * @param The blr : Bottom-Left-Rear point of box
+     * @param  blr : Bottom-Left-Rear point of box
      */
     public void setBlr(SurfacePoint blr) {
         this.blr = blr;
     }
 
     /**
-     * @return The brr : Bottom-Right-Rear point of box
+     * @return  brr : Bottom-Right-Rear point of box
      */
     public SurfacePoint getBrr() {
         return brr;
     }
 
     /**
-     * @param The brr : Bottom-Right-Rear point of box
+     * @param  brr : Bottom-Right-Rear point of box
      */
     public void setBrr(SurfacePoint brr) {
         this.brr = brr;
     }
 
     /**
-     * @return The trr : Top-Right-Rear point of box
+     * @return  trr : Top-Right-Rear point of box
      */
     public SurfacePoint getTrr() {
         return trr;
     }
 
     /**
-     * @param The trr : Top-Right-Rear point of box
+     * @param  trr : Top-Right-Rear point of box
      */
     public void setTrr(SurfacePoint trr) {
         this.trr = trr;
     }
 
     /**
-     * @return The tlr : Top-Left-Rear point of box
+     * @return  tlr : Top-Left-Rear point of box
      */
     public SurfacePoint getTlr() {
         return tlr;
     }
 
     /**
-     * @param The tlr : Top-Left-Rear point of box
+     * @param  tlr : Top-Left-Rear point of box
      */
     public void setTlr(SurfacePoint tlr) {
         this.tlr = tlr;
     }
 
     /**
-     * @return the width
+     * @return  width
      */
     public float getWidth() {
         return width;
     }
 
     /**
-     * @param width the width to set
+     * @param width  width to set
      */
     public void setWidth(float width) {
         this.width = width;
     }
 
     /**
-     * @return the length
+     * @return  length
      */
     public float getLength() {
         return length;
     }
 
     /**
-     * @param length the length to set
+     * @param length  length to set
      */
     public void setLength(float length) {
         this.length = length;
     }
 
     /**
-     * @return the depth
+     * @return  depth
      */
     public float getDepth() {
         return depth;
     }
 
     /**
-     * @param depth the depth to set
+     * @param depth  depth to set
      */
     public void setDepth(float depth) {
         this.depth = depth;

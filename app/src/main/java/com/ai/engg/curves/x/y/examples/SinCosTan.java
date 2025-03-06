@@ -26,11 +26,19 @@ public class SinCosTan extends Activity {
         this.requestWindowFeature(Window.FEATURE_NO_TITLE);
         this.requestWindowFeature(Window.FEATURE_NO_TITLE);
 
-        ArrayList<Drawing> drawings = new ArrayList<Drawing>();
-        drawings.add(new SinCurve(-7, 7));
-        drawings.add(new CosCurve(-7, 7));
-        drawings.add(new TanCurve(-7, 7));
-        //drawings.add(new CotCurve(-10, 10));
+        ArrayList<Drawing> drawings = new ArrayList<>();
+        SinCurve sinCurve = new SinCurve(-7, 7);
+        sinCurve.setColor("#ff0000");
+
+        CosCurve cosCurve = new CosCurve(-7, 7);
+        cosCurve.setColor("#00ff00");
+
+        TanCurve tanCurve = new TanCurve(-7, 7);
+
+        drawings.add(sinCurve);
+        drawings.add(cosCurve);
+        drawings.add(tanCurve);
+        // drawings.add(new CotCurve(-10, 10));
 
         SurfaceAttributes surfaceAttributes = new SurfaceAttributes();
         setContentView(new SurfaceRenderer(this, drawings, surfaceAttributes));

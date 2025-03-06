@@ -66,6 +66,7 @@ public class ExBox extends Box {
 
     }
 
+    // TODO Fix hard-coded colors
     protected Curve getInCrossLine(SurfacePoint bl, SurfacePoint br) {
 
         CurveAttributes defAttribs = new CurveAttributes();
@@ -80,6 +81,7 @@ public class ExBox extends Box {
     }
 
 
+    // TODO Fix hard-coded colors
     protected Curve getSideCrossLine(SurfacePoint bl, SurfacePoint br) {
 
         CurveAttributes defAttribs = new CurveAttributes();

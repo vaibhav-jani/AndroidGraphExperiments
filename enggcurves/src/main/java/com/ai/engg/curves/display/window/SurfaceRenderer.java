@@ -8,7 +8,6 @@ import android.graphics.Paint;
 import android.graphics.Path;
 import android.graphics.Path.Direction;
 import android.graphics.RectF;
-import android.util.Log;
 
 import androidx.annotation.NonNull;
 

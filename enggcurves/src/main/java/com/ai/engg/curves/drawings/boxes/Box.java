@@ -106,7 +106,7 @@ public class Box extends Drawing {
 
         CurveAttributes defAttribs = new CurveAttributes();
         defAttribs.setPathColor(color);
-        defAttribs.setDrawPoints(false);
+        defAttribs.setDrawPoints(true);
 
         ArrayList<SurfacePoint> blbr = new ArrayList<SurfacePoint>();
         blbr.add(bl);

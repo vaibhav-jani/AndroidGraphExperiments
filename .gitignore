@@ -1,10 +1,19 @@
 # Gradle
 .gradle/
+.gradle/**
+/.gradle/
+/.gradle/**
+
 !gradle/wrapper/gradle-wrapper.jar
 build/
 out/
 captures/
+
 .idea/
+.idea/**
+/.idea/
+/.idea/**
+
 .DS_Store
 
 # Local configuration files
@@ -95,3 +104,4 @@ outputs/
 .DS_Store
 .AppleDouble
 .LSOverride
+/.gradle/

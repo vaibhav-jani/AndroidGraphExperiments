@@ -5,7 +5,8 @@ import android.os.Bundle;
 import android.view.Window;
 import android.view.WindowManager;
 
-import com.ai.engg.curves.display.window.Drawer;
+import com.ai.engg.curves.display.window.SurfaceAttributes;
+import com.ai.engg.curves.display.window.SurfaceRenderer;
 import com.ai.engg.curves.drawings.Drawing;
 import com.ai.engg.curves.drawings.trigmometric.CosCurve;
 import com.ai.engg.curves.drawings.trigmometric.SinCurve;
@@ -31,7 +32,7 @@ public class SinCosTan extends Activity {
         drawings.add(new TanCurve(-7, 7));
         //drawings.add(new CotCurve(-10, 10));
 
-        Drawer drawer = new Drawer(drawings, null, this);
-        drawer.draw();
+        SurfaceAttributes surfaceAttributes = new SurfaceAttributes();
+        setContentView(new SurfaceRenderer(this, drawings, surfaceAttributes));
     }
 }

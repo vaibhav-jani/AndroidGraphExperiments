@@ -7,8 +7,9 @@ import android.view.WindowManager;
 
 import com.ai.engg.curves.Curve;
 import com.ai.engg.curves.CurveAttributes;
-import com.ai.engg.curves.display.window.Drawer;
+import com.ai.engg.curves.display.window.SurfaceAttributes;
 import com.ai.engg.curves.display.window.SurfacePoint;
+import com.ai.engg.curves.display.window.SurfaceRenderer;
 import com.ai.engg.curves.drawings.Drawing;
 
 import java.util.ArrayList;
@@ -46,7 +47,7 @@ public class SpiralTest6 extends Activity {
         ArrayList<Drawing> drawings = new ArrayList<Drawing>();
         drawings.add(drawing);
 
-        Drawer drawer = new Drawer(drawings, null, this);
-        drawer.draw();
+        SurfaceAttributes surfaceAttributes = new SurfaceAttributes();
+        setContentView(new SurfaceRenderer(this, drawings, surfaceAttributes));
     }
 }

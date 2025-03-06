@@ -5,7 +5,8 @@ import android.os.Bundle;
 import android.view.Window;
 import android.view.WindowManager;
 
-import com.ai.engg.curves.display.window.Drawer;
+import com.ai.engg.curves.display.window.SurfaceAttributes;
+import com.ai.engg.curves.display.window.SurfaceRenderer;
 import com.ai.engg.curves.drawings.Drawing;
 import com.ai.engg.curves.drawings.enggcurves.Ellipse;
 import com.ai.engg.curves.drawings.enggcurves.Hyperbola;
@@ -46,7 +47,7 @@ public class ParabolaHyperbolaEllipse extends Activity {
         //drawings.add(new SinCurve(-4, 4));
         //drawings.add(new CosCurve(-4, 4));
 
-        Drawer drawer = new Drawer(drawings, null, this);
-        drawer.draw();
+        SurfaceAttributes surfaceAttributes = new SurfaceAttributes();
+        setContentView(new SurfaceRenderer(this, drawings, surfaceAttributes));
     }
 }

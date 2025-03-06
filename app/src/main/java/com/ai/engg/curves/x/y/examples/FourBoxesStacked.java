@@ -5,7 +5,8 @@ import android.os.Bundle;
 import android.view.Window;
 import android.view.WindowManager;
 
-import com.ai.engg.curves.display.window.Drawer;
+import com.ai.engg.curves.display.window.SurfaceAttributes;
+import com.ai.engg.curves.display.window.SurfaceRenderer;
 import com.ai.engg.curves.drawings.Drawing;
 import com.ai.engg.curves.drawings.boxes.filledboxes.FilledBox;
 
@@ -63,7 +64,7 @@ public class FourBoxesStacked extends Activity {
 		drawings.add(box3z);
 		drawings.add(box4z);*/
 
-        Drawer drawer = new Drawer(drawings, null, this);
-        drawer.draw();
+        SurfaceAttributes surfaceAttributes = new SurfaceAttributes();
+        setContentView(new SurfaceRenderer(this, drawings, surfaceAttributes));
     }
 }

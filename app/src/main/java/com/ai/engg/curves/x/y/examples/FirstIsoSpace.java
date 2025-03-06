@@ -5,7 +5,8 @@ import android.os.Bundle;
 import android.view.Window;
 import android.view.WindowManager;
 
-import com.ai.engg.curves.display.window.Drawer;
+import com.ai.engg.curves.display.window.SurfaceAttributes;
+import com.ai.engg.curves.display.window.SurfaceRenderer;
 import com.ai.engg.curves.drawings.Drawing;
 import com.ai.engg.curves.drawings.boxes.filledboxes.ClosedBox;
 
@@ -66,7 +67,7 @@ public class FirstIsoSpace extends Activity {
         drawings.add(box12);
         drawings.add(box13);
 
-        Drawer drawer = new Drawer(drawings, null, this);
-        drawer.draw();
+        SurfaceAttributes surfaceAttributes = new SurfaceAttributes();
+        setContentView(new SurfaceRenderer(this, drawings, surfaceAttributes));
     }
 }

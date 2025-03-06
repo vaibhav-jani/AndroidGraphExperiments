@@ -5,7 +5,8 @@ import android.os.Bundle;
 import android.view.Window;
 import android.view.WindowManager;
 
-import com.ai.engg.curves.display.window.Drawer;
+import com.ai.engg.curves.display.window.SurfaceAttributes;
+import com.ai.engg.curves.display.window.SurfaceRenderer;
 import com.ai.engg.curves.drawings.Drawing;
 import com.ai.engg.curves.drawings.globe.Globe;
 
@@ -50,7 +51,7 @@ public class Uranus extends Activity {
 		drawings.add(new Ellipse(4, 0, 2, 6, Ellipse.X));
 		drawings.add(new Ellipse(5, 0, 1, 5, Ellipse.X));*/
 
-        Drawer drawer = new Drawer(drawings, null, this);
-        drawer.draw();
+        SurfaceAttributes surfaceAttributes = new SurfaceAttributes();
+        setContentView(new SurfaceRenderer(this, drawings, surfaceAttributes));
     }
 }

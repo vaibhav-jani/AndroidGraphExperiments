@@ -53,6 +53,8 @@ Tablet (10" resolution 2560x1600):
 
 ![Eight Boxes](examples-images/EightBoxes_Screenshot_20250305_113558.png)
 
+![Eight Boxes Color](examples-images/EightBox_Color_Screenshot_20250306_221848.png)
+
 ![First ISO Space](examples-images/FirstIsoSpace_Screenshot_20250305_122818.png)
 
 ![Four adjacent boxes](examples-images/FourAdjacentBoxes_Screenshot_20250305_172154.png)

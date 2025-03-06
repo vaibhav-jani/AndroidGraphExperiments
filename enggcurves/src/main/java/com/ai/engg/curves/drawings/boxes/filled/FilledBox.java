@@ -118,6 +118,12 @@ public class FilledBox extends Box {
         return topColor;
     }
 
+    public void setColor(String color) {
+        this.color = color;
+        // TODO Bad hack,
+        redraw();
+    }
+
     public void setTopColor(String topColor) {
         this.topColor = topColor;
         // TODO fix bad hack

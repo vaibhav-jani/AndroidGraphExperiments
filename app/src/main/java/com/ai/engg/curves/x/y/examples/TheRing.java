@@ -5,12 +5,12 @@ import android.os.Bundle;
 import android.view.Window;
 import android.view.WindowManager;
 
-import com.ai.engg.curves.Curve;
-import com.ai.engg.curves.CurveAttributes;
+import com.ai.engg.curves.models.Curve;
+import com.ai.engg.curves.models.CurveAttributes;
 import com.ai.engg.curves.display.window.SurfaceAttributes;
-import com.ai.engg.curves.display.window.SurfacePoint;
+import com.ai.engg.curves.models.Point;
 import com.ai.engg.curves.display.window.SurfaceRenderer;
-import com.ai.engg.curves.drawings.Drawing;
+import com.ai.engg.curves.models.Drawing;
 
 import java.util.ArrayList;
 
@@ -26,10 +26,10 @@ public class TheRing extends Activity {
         this.requestWindowFeature(Window.FEATURE_NO_TITLE);
         this.requestWindowFeature(Window.FEATURE_NO_TITLE);
 
-        ArrayList<SurfacePoint> points = new ArrayList<SurfacePoint>();
+        ArrayList<Point> points = new ArrayList<Point>();
 
         for (float i = 0; i < 360; i = i + 1f) {
-            points.add(new SurfacePoint(5 * ((float) Math.cos(i)), 5 * ((float) Math.sin(i))));
+            points.add(new Point(5 * ((float) Math.cos(i)), 5 * ((float) Math.sin(i))));
         }
 
         CurveAttributes defAttribs = new CurveAttributes();

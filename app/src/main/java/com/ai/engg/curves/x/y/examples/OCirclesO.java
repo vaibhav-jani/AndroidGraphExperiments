@@ -7,7 +7,7 @@ import android.view.WindowManager;
 
 import com.ai.engg.curves.display.window.SurfaceAttributes;
 import com.ai.engg.curves.display.window.SurfaceRenderer;
-import com.ai.engg.curves.drawings.Drawing;
+import com.ai.engg.curves.models.Drawing;
 import com.ai.engg.curves.drawings.conic.sections.Circle;
 import com.ai.engg.curves.drawings.trigmometric.CosCurve;
 import com.ai.engg.curves.drawings.trigmometric.SinCurve;

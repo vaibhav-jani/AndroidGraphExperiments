@@ -5,12 +5,12 @@ import android.os.Bundle;
 import android.view.Window;
 import android.view.WindowManager;
 
-import com.ai.engg.curves.Curve;
-import com.ai.engg.curves.CurveAttributes;
+import com.ai.engg.curves.models.Curve;
+import com.ai.engg.curves.models.CurveAttributes;
 import com.ai.engg.curves.display.window.SurfaceAttributes;
-import com.ai.engg.curves.display.window.SurfacePoint;
+import com.ai.engg.curves.models.Point;
 import com.ai.engg.curves.display.window.SurfaceRenderer;
-import com.ai.engg.curves.drawings.Drawing;
+import com.ai.engg.curves.models.Drawing;
 
 import java.util.ArrayList;
 
@@ -48,15 +48,15 @@ public class TwoNestedBoxes extends Activity {
 
     private void drawCubeOncurves(ArrayList<Curve> curves, int len, int wid, int dep, int start_x, int start_y) {
 
-        SurfacePoint p1 = new SurfacePoint(start_x, start_y);
-        SurfacePoint p2 = new SurfacePoint(start_x + wid, start_y);
-        SurfacePoint p3 = new SurfacePoint(start_x + wid, len + start_y);
-        SurfacePoint p4 = new SurfacePoint(start_x, len + start_y);
+        Point p1 = new Point(start_x, start_y);
+        Point p2 = new Point(start_x + wid, start_y);
+        Point p3 = new Point(start_x + wid, len + start_y);
+        Point p4 = new Point(start_x, len + start_y);
 
-        SurfacePoint p5 = new SurfacePoint(p1.x - dep, p1.y - dep);
-        SurfacePoint p6 = new SurfacePoint(p2.x - dep, p2.y - dep);
-        SurfacePoint p7 = new SurfacePoint(p3.x - dep, p3.y - dep);
-        SurfacePoint p8 = new SurfacePoint(p4.x - dep, p4.y - dep);
+        Point p5 = new Point(p1.x - dep, p1.y - dep);
+        Point p6 = new Point(p2.x - dep, p2.y - dep);
+        Point p7 = new Point(p3.x - dep, p3.y - dep);
+        Point p8 = new Point(p4.x - dep, p4.y - dep);
 
 
         curves.add(getBlueLine(p1, p2));
@@ -76,11 +76,11 @@ public class TwoNestedBoxes extends Activity {
 
     }
 
-    Curve getBlueLine(SurfacePoint p1, SurfacePoint p2) {
+    Curve getBlueLine(Point p1, Point p2) {
 
         CurveAttributes defAttribs = new CurveAttributes();
 
-        ArrayList<SurfacePoint> p1p2 = new ArrayList<SurfacePoint>();
+        ArrayList<Point> p1p2 = new ArrayList<Point>();
         p1p2.add(p1);
         p1p2.add(p2);
 
@@ -88,12 +88,12 @@ public class TwoNestedBoxes extends Activity {
         return line;
     }
 
-    Curve getRedLine(SurfacePoint p1, SurfacePoint p2) {
+    Curve getRedLine(Point p1, Point p2) {
 
         CurveAttributes defAttribs = new CurveAttributes();
         defAttribs.setPathColor("#FF0000");
 
-        ArrayList<SurfacePoint> p1p2 = new ArrayList<SurfacePoint>();
+        ArrayList<Point> p1p2 = new ArrayList<Point>();
         p1p2.add(p1);
         p1p2.add(p2);
 

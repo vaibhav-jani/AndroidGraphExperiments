@@ -6,12 +6,12 @@ import android.util.Log;
 import android.view.Window;
 import android.view.WindowManager;
 
-import com.ai.engg.curves.Curve;
-import com.ai.engg.curves.CurveAttributes;
+import com.ai.engg.curves.models.Curve;
+import com.ai.engg.curves.models.CurveAttributes;
 import com.ai.engg.curves.display.window.SurfaceAttributes;
-import com.ai.engg.curves.display.window.SurfacePoint;
+import com.ai.engg.curves.models.Point;
 import com.ai.engg.curves.display.window.SurfaceRenderer;
-import com.ai.engg.curves.drawings.Drawing;
+import com.ai.engg.curves.models.Drawing;
 
 import java.util.ArrayList;
 
@@ -26,7 +26,7 @@ public class CurveTest extends Activity {
         this.requestWindowFeature(Window.FEATURE_NO_TITLE);
         this.requestWindowFeature(Window.FEATURE_NO_TITLE);
 
-        ArrayList<SurfacePoint> points = new ArrayList<SurfacePoint>();
+        ArrayList<Point> points = new ArrayList<Point>();
 
         for (float i = -20; i <= 20; i = i + 1f) {
 
@@ -35,7 +35,7 @@ public class CurveTest extends Activity {
                 float y = (float) 1 / x;
 
                 Log.d("Curve test", x + " | " + y);
-                points.add(new SurfacePoint(x, y));
+                points.add(new Point(x, y));
             }
         }
 

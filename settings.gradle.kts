@@ -21,4 +21,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "AndroidGraphs"
 include(":app")
-include(":enggcurves")
+include(":engg-curves")

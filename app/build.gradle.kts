@@ -41,7 +41,7 @@ android {
 
 dependencies {
 
-    implementation(project(":enggcurves"))
+    implementation(project(":engg-curves"))
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.activity.compose)

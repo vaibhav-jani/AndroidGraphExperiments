@@ -31,13 +31,13 @@ public class MathCurveView extends BaseSurface {
     private float x_unit_length;
     private float y_unit_length;
 
-    private ArrayList<Drawing> drawings = new ArrayList<>();
+    private List<Drawing> drawings = new ArrayList<>();
 
-    private final ArrayList<Curve> curvesCache = new ArrayList<>();
+    private final List<Curve> curvesCache = new ArrayList<>();
 
     private SurfaceAttributes surfaceAttributes = new SurfaceAttributes();
 
-    public MathCurveView(Activity activity, ArrayList<Drawing> drawings, SurfaceAttributes surfaceAttributes) {
+    public MathCurveView(Activity activity, List<Drawing> drawings, SurfaceAttributes surfaceAttributes) {
         super(activity);
         if (drawings != null) this.drawings = drawings;
         if (surfaceAttributes != null) this.surfaceAttributes = surfaceAttributes;
@@ -53,7 +53,7 @@ public class MathCurveView extends BaseSurface {
         configurePaths(drawings);
     }
 
-    private ArrayList<Drawing> configurePaths(ArrayList<Drawing> drawings) {
+    private List<Drawing> configurePaths(List<Drawing> drawings) {
 
         double minimum_x = 0;
         double maximum_x = 0;
@@ -128,7 +128,7 @@ public class MathCurveView extends BaseSurface {
         return drawings;
     }
 
-    private void addEmptyDrawing(ArrayList<Drawing> drawings) {
+    private void addEmptyDrawing(List<Drawing> drawings) {
         ArrayList<Point> emptyPoints = new ArrayList<>();
         emptyPoints.add(new Point(-0.1f, -0.1f));
         emptyPoints.add(new Point(0.1f, 0.1f));

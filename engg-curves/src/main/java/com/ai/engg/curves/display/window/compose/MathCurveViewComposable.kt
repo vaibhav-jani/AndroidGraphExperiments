@@ -23,3 +23,18 @@ fun MathCurveViewComposable(
         modifier = modifier
     )
 }
+
+@Composable
+fun MathCurveViewComposable(
+    drawings: List<Drawing>,
+    surfaceAttributes: SurfaceAttributes,
+    modifier: Modifier = Modifier
+) {
+    AndroidView(
+        factory = { context ->
+            val activity = context as? Activity
+            MathCurveView(activity, drawings, surfaceAttributes)
+        },
+        modifier = modifier
+    )
+}

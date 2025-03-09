@@ -13,17 +13,17 @@ public class Parabola extends Drawing {
     public static int POSITIVE_X = 1;
     public static int NEGATIVE_Y = 2;
     public static int POSITIVE_Y = 3;
-    private final int x0;
-    private final int yo;
-    private final int start;
-    private final int end;
-    private final int a;
-    private final int b;
+    private final float x0;
+    private final float yo;
+    private final float start;
+    private final float end;
+    private final float a;
+    private final float b;
     private final int direction;
 
     private String color = "#FF0000";
 
-    public Parabola(int x0, int yo, int start, int end, int a, int b, int direction) {
+    public Parabola(float x0, float yo, float start, float end, float a, float b, int direction) {
         this.x0 = x0;
         this.yo = yo;
         this.start = start;
@@ -35,9 +35,9 @@ public class Parabola extends Drawing {
         draw();
     }
 
-    public Curve getCurve(int x0, int yo, int start, int end, int a, int b, int direction) {
+    public Curve getCurve(float x0, float yo, float start, float end, float a, float b, int direction) {
         if (end < start) {
-            int temp = start;
+            float temp = start;
             start = end;
             end = temp;
         }

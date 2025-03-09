@@ -2,8 +2,8 @@ package com.ai.engg.curves.drawings.conic.sections;
 
 import com.ai.engg.curves.models.Curve;
 import com.ai.engg.curves.models.CurveAttributes;
-import com.ai.engg.curves.models.Point;
 import com.ai.engg.curves.models.Drawing;
+import com.ai.engg.curves.models.Point;
 
 import java.util.ArrayList;
 
@@ -13,15 +13,21 @@ public class Ellipse extends Drawing {
     public static int Y = 1;
 
     private String color = "#0000FF";
-    private final int x0;
-    private final int y0;
-    private final int a;
-    private final int b;
+    private final float x0;
+    private final float y0;
+    private final float a;
+    private final float b;
 
     private float angle = -1;
     private int direction = -1;
 
-    public Ellipse(int x0, int y0, int a, int b, int direction) {
+    public Ellipse(
+            float x0,
+            float y0,
+            float a,
+            float b,
+            int direction
+    ) {
         this.x0 = x0;
         this.y0 = y0;
         this.a = a;
@@ -30,7 +36,13 @@ public class Ellipse extends Drawing {
         draw();
     }
 
-    public Ellipse(int x0, int y0, int a, int b, float angle) {
+    public Ellipse(
+            float x0,
+            float y0,
+            float a,
+            float b,
+            float angle
+    ) {
         this.x0 = x0;
         this.y0 = y0;
         this.a = a;
@@ -39,7 +51,13 @@ public class Ellipse extends Drawing {
         draw();
     }
 
-    public Curve getCurve(int x0, int y0, int a, int b, int direction) {
+    public Curve getCurve(
+            float x0,
+            float y0,
+            float a,
+            float b,
+            int direction
+    ) {
         ArrayList<Point> points = new ArrayList<>();
 
         for (float i = 0; i <= 6.3; i = i + 0.1f) {
@@ -57,7 +75,13 @@ public class Ellipse extends Drawing {
         return new Curve(points, defAttribs);
     }
 
-    public Curve getAngelCurve(int x0, int y0, int a, int b, float angle) {
+    public Curve getAngelCurve(
+            float x0,
+            float y0,
+            float a,
+            float b,
+            float angle
+    ) {
         ArrayList<Point> points = new ArrayList<>();
 
         for (float i = 0; i <= 6.3; i = i + 0.1f) {

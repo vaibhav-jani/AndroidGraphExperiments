@@ -45,7 +45,9 @@ Here are few samples I plotted:
 
 Tablet (10" resolution 2560x1600):
 
-![Lines Example](examples-images/Lines_Example_Screenshot_20250309_211054.png)
+![Lines Example](examples-images/LinesTest_Screenshot_20250309_221321.png)
+
+![Lines with curve](examples-images/Line_curves2_Screenshot_20250309_222846.png)
 
 ![A Box](examples-images/ABox_Screenshot_20250305_111949.png)
 

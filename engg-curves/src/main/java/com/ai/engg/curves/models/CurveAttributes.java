@@ -11,7 +11,7 @@ public class CurveAttributes {
     private boolean drawPoints = true;
     //private boolean isDotted = false;
 
-    private float strokeWidthOfPath = 2;
+    private float strokeWidthOfPath = 2.5f;
 
     private float radiusOfPoints = 2;
 

@@ -61,6 +61,10 @@ public class MathCurveView extends BaseSurface {
         double minimum_y = 0;
         double maximum_y = 0;
 
+        // Add empty drawings to avoid divide by zero.
+        // For cases with empty drawings and all points on one of the axis;
+        addEmptyDrawing(drawings);
+
         for (Drawing drawing : drawings) {
             for (Curve curve : drawing.getCurves()) {
                 ArrayList<Point> points = curve.getPoints();
@@ -79,8 +83,20 @@ public class MathCurveView extends BaseSurface {
         no_of_y_negative_unit = (float) Math.abs(minimum_y);
         no_of_y_positive_unit = (float) Math.abs(maximum_y);
 
-        x_unit_length = drawing_width / (no_of_x_negative_unit + no_of_x_positive_unit);
-        y_unit_length = drawing_height / (no_of_y_negative_unit + no_of_y_positive_unit);
+        float total_x_units = no_of_x_negative_unit + no_of_x_positive_unit;
+        float total_y_units = no_of_y_negative_unit + no_of_y_positive_unit;
+
+        if (total_x_units != 0) {
+            x_unit_length = drawing_width / total_x_units;
+        } else {
+            x_unit_length = 0;
+        }
+
+        if (total_y_units != 0) {
+            y_unit_length = drawing_height / total_y_units;
+        } else {
+            y_unit_length = 0;
+        }
 
         float x_translate_factor = (no_of_x_negative_unit * x_unit_length) + offset_left;
         float y_translate_factor = display_height - (no_of_y_negative_unit * y_unit_length) - offset_bottom;
@@ -98,7 +114,6 @@ public class MathCurveView extends BaseSurface {
             }
         }
 
-
         for (Drawing drawing : drawings) {
             for (Curve curve : drawing.getCurves()) {
                 ArrayList<Point> points = curve.getPoints();
@@ -113,6 +128,23 @@ public class MathCurveView extends BaseSurface {
         return drawings;
     }
 
+    private void addEmptyDrawing(ArrayList<Drawing> drawings) {
+        ArrayList<Point> emptyPoints = new ArrayList<>();
+        emptyPoints.add(new Point(-0.1f, -0.1f));
+        emptyPoints.add(new Point(0.1f, 0.1f));
+
+        ArrayList<Curve> paths = new ArrayList<>();
+        CurveAttributes pathAttributes = new CurveAttributes();
+        pathAttributes.setPathColor("#00ff0000");
+        pathAttributes.setPointColor("#00ff0000");
+        Curve empty = new Curve(emptyPoints, pathAttributes);
+        paths.add(empty);
+
+        Drawing emptyDrawing = new Drawing();
+        emptyDrawing.setCurves(paths);
+        drawings.add(emptyDrawing);
+    }
+
     @Override
     protected void onDraw(@NonNull Canvas canvas) {
         super.onDraw(canvas);
@@ -122,18 +154,14 @@ public class MathCurveView extends BaseSurface {
         //if(surfaceAttributes.isGridVisible()) drawGrid(canvas);
         if (surfaceAttributes.isGridVisible()) drawGridNew(canvas);
         if (surfaceAttributes.isAxisVisible()) drawAxis(canvas);
-        drawCurves(canvas);
         drawAxisNames(canvas);
+        drawCurves(canvas);
     }
 
     private void drawCurves(Canvas canvas) {
 
         for (Curve curve : curvesCache) {
             CurveAttributes attributes = curve.getAttributes();
-
-            if (attributes.isDrawPoints()) {
-                drawPoints(curve.getPoints(), attributes, canvas);
-            }
 
             paint.setColor(Color.parseColor(attributes.getPathColor()));
             paint.setStrokeWidth(curve.getAttributes().getStrokeWidthOfPath());
@@ -147,6 +175,10 @@ public class MathCurveView extends BaseSurface {
                 p1 = point;
             }
             canvas.drawPath(path, paint);
+
+            if (attributes.isDrawPoints()) {
+                drawPoints(curve.getPoints(), attributes, canvas);
+            }
         }
     }
 

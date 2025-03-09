@@ -7,7 +7,7 @@ import android.os.Bundle;
 import android.view.Window;
 
 import com.ai.engg.curves.display.window.SurfaceAttributes;
-import com.ai.engg.curves.display.window.SurfaceRenderer;
+import com.ai.engg.curves.display.window.MathCurveView;
 import com.ai.engg.curves.models.Drawing;
 import com.ai.engg.curves.drawings.boxes.Box;
 import com.ai.engg.curves.drawings.boxes.OpenBox;
@@ -56,6 +56,6 @@ public class SimpleIsoMetric extends Activity {
         drawings.add(box10);
 
         SurfaceAttributes surfaceAttributes = new SurfaceAttributes();
-        setContentView(new SurfaceRenderer(this, drawings, surfaceAttributes));
+        setContentView(new MathCurveView(this, drawings, surfaceAttributes));
     }
 }

@@ -6,7 +6,7 @@ import android.view.Window;
 import android.view.WindowManager;
 
 import com.ai.engg.curves.display.window.SurfaceAttributes;
-import com.ai.engg.curves.display.window.SurfaceRenderer;
+import com.ai.engg.curves.display.window.MathCurveView;
 import com.ai.engg.curves.models.Drawing;
 import com.ai.engg.curves.drawings.conic.sections.Ellipse;
 
@@ -35,6 +35,6 @@ public class EllipsesWithCircle extends Activity {
 		 */
 
         SurfaceAttributes surfaceAttributes = new SurfaceAttributes();
-        setContentView(new SurfaceRenderer(this, drawings, surfaceAttributes));
+        setContentView(new MathCurveView(this, drawings, surfaceAttributes));
     }
 }

@@ -9,7 +9,7 @@ import com.ai.engg.curves.models.Curve;
 import com.ai.engg.curves.models.CurveAttributes;
 import com.ai.engg.curves.display.window.SurfaceAttributes;
 import com.ai.engg.curves.models.Point;
-import com.ai.engg.curves.display.window.SurfaceRenderer;
+import com.ai.engg.curves.display.window.MathCurveView;
 import com.ai.engg.curves.models.Drawing;
 
 import java.util.ArrayList;
@@ -77,6 +77,6 @@ public class CTest extends Activity {
         drawings.add(drawing);
 
         SurfaceAttributes surfaceAttributes = new SurfaceAttributes();
-        setContentView(new SurfaceRenderer(this, drawings, surfaceAttributes));
+        setContentView(new MathCurveView(this, drawings, surfaceAttributes));
     }
 }

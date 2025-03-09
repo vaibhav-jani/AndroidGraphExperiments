@@ -20,7 +20,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @SuppressLint("ViewConstructor")
-public class SurfaceRenderer extends DrawingSurface {
+public class MathCurveView extends BaseSurface {
 
     private float no_of_x_positive_unit;
     private float no_of_y_positive_unit;
@@ -37,7 +37,7 @@ public class SurfaceRenderer extends DrawingSurface {
 
     private SurfaceAttributes surfaceAttributes = new SurfaceAttributes();
 
-    public SurfaceRenderer(Activity activity, ArrayList<Drawing> drawings, SurfaceAttributes surfaceAttributes) {
+    public MathCurveView(Activity activity, ArrayList<Drawing> drawings, SurfaceAttributes surfaceAttributes) {
         super(activity);
         if (drawings != null) this.drawings = drawings;
         if (surfaceAttributes != null) this.surfaceAttributes = surfaceAttributes;
@@ -46,7 +46,7 @@ public class SurfaceRenderer extends DrawingSurface {
         }
     }
 
-    public SurfaceRenderer(Activity activity, Drawing drawing, SurfaceAttributes surfaceAttributes) {
+    public MathCurveView(Activity activity, Drawing drawing, SurfaceAttributes surfaceAttributes) {
         super(activity);
         if (drawing != null) this.drawings.add(drawing);
         if (surfaceAttributes != null) this.surfaceAttributes = surfaceAttributes;

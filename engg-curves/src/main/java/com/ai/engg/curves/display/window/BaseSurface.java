@@ -5,7 +5,7 @@ import android.graphics.Paint;
 import android.util.DisplayMetrics;
 import android.view.View;
 
-public abstract class DrawingSurface extends View {
+public abstract class BaseSurface extends View {
 
     //Paint to draw things
     protected Paint paint;
@@ -35,7 +35,7 @@ public abstract class DrawingSurface extends View {
     protected float drawing_height;
     protected float drawing_width;
 
-    public DrawingSurface(Activity activity) {
+    public BaseSurface(Activity activity) {
         super(activity);
 
         //First determining height of the display
@@ -58,7 +58,7 @@ public abstract class DrawingSurface extends View {
         drawing_width = display_width - offset_right - offset_left;
         drawing_height = display_height - offset_top - offset_bottom;
 
-        //Calculating drawing corners, tl : top-left, br : bottom-right ... and so on
+        // Calculating drawing corners, tl : top-left, br : bottom-right ... and so on
         xtl = offset_left;
         ytl = offset_top;
         xtr = display_width - offset_right;
@@ -68,7 +68,7 @@ public abstract class DrawingSurface extends View {
         xbr = display_width - offset_right;
         ybr = display_height - offset_bottom;
 
-        //Initialize Paint object
+        // Initialize Paint object
         paint = new Paint();
         paint.setStrokeJoin(Paint.Join.ROUND);
         paint.setStrokeCap(Paint.Cap.ROUND);
@@ -76,4 +76,5 @@ public abstract class DrawingSurface extends View {
         paint.setDither(true);
         paint.setStyle(Paint.Style.STROKE);
     }
+
 }

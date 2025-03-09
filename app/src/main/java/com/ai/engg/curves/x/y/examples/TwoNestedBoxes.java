@@ -9,7 +9,7 @@ import com.ai.engg.curves.models.Curve;
 import com.ai.engg.curves.models.CurveAttributes;
 import com.ai.engg.curves.display.window.SurfaceAttributes;
 import com.ai.engg.curves.models.Point;
-import com.ai.engg.curves.display.window.SurfaceRenderer;
+import com.ai.engg.curves.display.window.MathCurveView;
 import com.ai.engg.curves.models.Drawing;
 
 import java.util.ArrayList;
@@ -43,7 +43,7 @@ public class TwoNestedBoxes extends Activity {
         Drawing drawing = new Drawing();
         drawing.setCurves(curves);
 
-        setContentView(new SurfaceRenderer(this, drawing, surfaceAttributes));
+        setContentView(new MathCurveView(this, drawing, surfaceAttributes));
     }
 
     private void drawCubeOncurves(ArrayList<Curve> curves, int len, int wid, int dep, int start_x, int start_y) {

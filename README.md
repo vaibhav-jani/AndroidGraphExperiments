@@ -45,6 +45,8 @@ Here are few samples I plotted:
 
 Tablet (10" resolution 2560x1600):
 
+![Lines Example](examples-images/Lines_Example_Screenshot_20250309_211054.png)
+
 ![A Box](examples-images/ABox_Screenshot_20250305_111949.png)
 
 ![Complex Diamond](examples-images/ComplexDiamond_Screenshot_20250305_112422.png)

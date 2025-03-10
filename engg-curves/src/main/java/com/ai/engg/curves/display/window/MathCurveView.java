@@ -13,8 +13,8 @@ import androidx.annotation.NonNull;
 
 import com.ai.engg.curves.models.Curve;
 import com.ai.engg.curves.models.CurveAttributes;
-import com.ai.engg.curves.models.Point;
 import com.ai.engg.curves.models.Drawing;
+import com.ai.engg.curves.models.Point;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -98,9 +98,6 @@ public class MathCurveView extends BaseSurface {
             y_unit_length = 0;
         }
 
-        float x_translate_factor = (no_of_x_negative_unit * x_unit_length) + offset_left;
-        float y_translate_factor = display_height - (no_of_y_negative_unit * y_unit_length) - offset_bottom;
-
         for (Drawing drawing : drawings) {
             for (Curve curve : drawing.getCurves()) {
                 ArrayList<Point> tPoints = new ArrayList<>();
@@ -113,6 +110,10 @@ public class MathCurveView extends BaseSurface {
                 curve.setPoints(tPoints);
             }
         }
+
+
+        float x_translate_factor = (no_of_x_negative_unit * x_unit_length) + offset_left;
+        float y_translate_factor = display_height - (no_of_y_negative_unit * y_unit_length) - offset_bottom;
 
         for (Drawing drawing : drawings) {
             for (Curve curve : drawing.getCurves()) {
@@ -213,32 +214,79 @@ public class MathCurveView extends BaseSurface {
 
         paint.setColor(Color.parseColor(surfaceAttributes.getAxisColor()));
         paint.setStrokeWidth(surfaceAttributes.getAxisStrokeWidth());
-        //y
-        canvas.drawLine(xtl + (no_of_x_negative_unit * x_unit_length), ytl, xbl + (no_of_x_negative_unit * x_unit_length), ybl, paint);
-        //x
-        canvas.drawLine(xtl, ytl + (no_of_y_positive_unit * y_unit_length), xtr, ytr + (no_of_y_positive_unit * y_unit_length), paint);
+
+        float x1_mid_top = xtl + (no_of_x_negative_unit * x_unit_length);
+        float y1_mid_top = ytl;
+
+        float x2_mid_bottom = xbl + (no_of_x_negative_unit * x_unit_length);
+        float y2_mid_bottom = ybl;
+
+        // y
+        canvas.drawLine(x1_mid_top, y1_mid_top, x2_mid_bottom, y2_mid_bottom, paint);
+
+        float x1_mid_left = xtl;
+        float y1_mid_left = ytl + (no_of_y_positive_unit * y_unit_length);
+
+        float x2_mid_right = xtr;
+        float y2_mid_right = ytr + (no_of_y_positive_unit * y_unit_length);
+
+        // x
+        canvas.drawLine(x1_mid_left, y1_mid_left, x2_mid_right, y2_mid_right, paint);
     }
 
     private void drawGridNew(Canvas canvas) {
 
-        paint.setColor(Color.parseColor(surfaceAttributes.getGridColor()));
-
         float max_stroke_width = surfaceAttributes.getGridStrokeWidth();
 
-        float gridStrokeWidth_x = 10 / (no_of_x_negative_unit + no_of_x_positive_unit);
-        float gridStrokeWidth_y = 10 / (no_of_y_negative_unit + no_of_y_positive_unit);
+        float total_x_units = no_of_x_negative_unit + no_of_x_positive_unit;
+        float total_y_units = no_of_y_negative_unit + no_of_y_positive_unit;
+
+        float gridStrokeWidth_x = 10 / (total_x_units);
+        float gridStrokeWidth_y = 10 / (total_y_units);
 
         gridStrokeWidth_x = Math.min(gridStrokeWidth_x, max_stroke_width);
         gridStrokeWidth_y = Math.min(gridStrokeWidth_y, max_stroke_width);
 
+        paint.setColor(Color.parseColor(surfaceAttributes.getGridColor()));
+
+        float x1_mid_top = xtl + (no_of_x_negative_unit * x_unit_length);
+        float y1_mid_top = ytl;
+
+        float x2_mid_bottom = xbl + (no_of_x_negative_unit * x_unit_length);
+        float y2_mid_bottom = ybl;
+
+        // y
         paint.setStrokeWidth(gridStrokeWidth_x);
-        for (int i = 1; i < (no_of_x_negative_unit + no_of_x_positive_unit); i++) {
-            canvas.drawLine(xtl + (i * x_unit_length), ytl, xbl + (i * x_unit_length), ybl, paint);
+        for (int i = 0; i < no_of_x_positive_unit; i++) {
+            float x1 = x1_mid_top + (i * x_unit_length);
+            float x2 = x2_mid_bottom + (i * x_unit_length);
+            canvas.drawLine(x1, y1_mid_top, x2, y2_mid_bottom, paint);
         }
 
+        for (int i = 0; i < no_of_x_negative_unit; i++) {
+            float x1 = x1_mid_top + (-i * x_unit_length);
+            float x2 = x2_mid_bottom + (-i * x_unit_length);
+            canvas.drawLine(x1, y1_mid_top, x2, y2_mid_bottom, paint);
+        }
+
+        float x1_mid_left = xtl;
+        float y1_mid_left = ytl + (no_of_y_positive_unit * y_unit_length);
+
+        float x2_mid_right = xtr;
+        float y2_mid_right = ytr + (no_of_y_positive_unit * y_unit_length);
+
+        // x
         paint.setStrokeWidth(gridStrokeWidth_y);
-        for (int i = 1; i < (no_of_y_negative_unit + no_of_y_positive_unit); i++) {
-            canvas.drawLine(xtl, ytl + (i * y_unit_length), xtr, ytr + (i * y_unit_length), paint);
+        for (int i = 0; i < no_of_y_positive_unit; i++) {
+            float y1 = y1_mid_left + (-i * y_unit_length);
+            float y2 = y2_mid_right + (-i * y_unit_length);
+            canvas.drawLine(x1_mid_left, y1, x2_mid_right, y2, paint);
+        }
+
+        for (int i = 0; i < no_of_y_negative_unit; i++) {
+            float y1 = y1_mid_left + (i * y_unit_length);
+            float y2 = y2_mid_right + (i * y_unit_length);
+            canvas.drawLine(x1_mid_left, y1, x2_mid_right, y2, paint);
         }
 
         canvas.drawLine(xtl, ytl, xbl, ybl, paint);

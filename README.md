@@ -42,9 +42,19 @@ $$
 
 ---
 
-Here are few samples I plotted:
+**Here are few samples I plotted:**
+
+Phone [1080x2400]:
 
 ![Spiral Test Phone](examples-images/SpriralTest_Phone_Screenshot_20250305_182944.png)
+
+Tablet (10" resolution 2560x1600):
+
+![X Boxes Examples](examples-images/GreenRedCrossBox_Screenshot_20250306_161700.png)
+
+![Planets](examples-images/Planets_Screenshot_20250305_122522.png)
+
+![Perspective_ISO](examples-images/Perspective_ISO.png)
 
 ---
 
@@ -64,7 +74,7 @@ Tablet (10" resolution 2560x1600):
 
 ---
 
-More examples:
+**More examples:**
 
 - [Spiral curves](/SPIRAL_EXAMPLES.md)
 

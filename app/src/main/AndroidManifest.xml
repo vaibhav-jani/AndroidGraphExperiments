@@ -21,7 +21,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.ai.engg.curves.x.y.examples.LineExamples" />
+        <activity android:name="com.ai.engg.curves.x.y.examples.activities.LineExamples" />
         <activity android:name="com.ai.engg.curves.x.y.examples.ABox" />
         <activity android:name="com.ai.engg.curves.x.y.examples.TheRing" />
         <activity android:name="com.ai.engg.curves.x.y.examples.ButterflyCurve" />

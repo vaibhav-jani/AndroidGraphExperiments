@@ -1,22 +1,23 @@
 package com.ai.engg.curves.models;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class Drawing {
 
-    protected ArrayList<Curve> curves = new ArrayList<Curve>();
+    protected List<Curve> curves = new ArrayList<>();
 
     /**
      * @return the curves
      */
-    public ArrayList<Curve> getCurves() {
+    public List<Curve> getCurves() {
         return curves;
     }
 
     /**
      * @param curves the curves to set
      */
-    public void setCurves(ArrayList<Curve> curves) {
+    public void setCurves(List<Curve> curves) {
         this.curves = curves;
     }
 

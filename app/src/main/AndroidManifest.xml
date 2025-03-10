@@ -21,7 +21,17 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <activity android:name="com.ai.engg.curves.x.y.examples.activities.LineExamples" />
+
+        <activity android:name="com.ai.engg.curves.x.y.examples.activities.SpiralExample1" />
+        <activity android:name="com.ai.engg.curves.x.y.examples.activities.SpiralExample2" />
+        <activity android:name="com.ai.engg.curves.x.y.examples.activities.SpiralExample3" />
+        <activity android:name="com.ai.engg.curves.x.y.examples.activities.SpiralExample4" />
+        <activity android:name="com.ai.engg.curves.x.y.examples.activities.SpiralExample5" />
+        <activity android:name="com.ai.engg.curves.x.y.examples.activities.SpiralExample6" />
+        <activity android:name="com.ai.engg.curves.x.y.examples.activities.SpiralExample7" />
+
         <activity android:name="com.ai.engg.curves.x.y.examples.ABox" />
         <activity android:name="com.ai.engg.curves.x.y.examples.TheRing" />
         <activity android:name="com.ai.engg.curves.x.y.examples.ButterflyCurve" />
@@ -47,11 +57,6 @@
         <activity android:name="com.ai.engg.curves.x.y.examples.SimpleIsoMetric" />
         <activity android:name="com.ai.engg.curves.x.y.examples.SpiralTest1" />
         <activity android:name="com.ai.engg.curves.x.y.examples.SpiralTest2" />
-        <activity android:name="com.ai.engg.curves.x.y.examples.SpiralTest3" />
-        <activity android:name="com.ai.engg.curves.x.y.examples.SpiralTest4" />
-        <activity android:name="com.ai.engg.curves.x.y.examples.SpiralTest5" />
-        <activity android:name="com.ai.engg.curves.x.y.examples.SpiralTest6" />
-        <activity android:name="com.ai.engg.curves.x.y.examples.SpiralTest7" />
         <activity android:name="com.ai.engg.curves.x.y.examples.FirstIsoSpace" />
         <activity android:name="com.ai.engg.curves.x.y.examples.EllipsesWithCircle" />
         <activity android:name="com.ai.engg.curves.x.y.examples.TestBoxes" />

@@ -1,24 +1,25 @@
 package com.ai.engg.curves.models;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class Curve {
 
     private CurveAttributes attributes = new CurveAttributes();
 
-    private ArrayList<Point> points = new ArrayList<Point>();
+    private List<Point> points = new ArrayList<>();
 
-    public Curve(ArrayList<Point> points, CurveAttributes curveAttributes) {
+    public Curve(List<Point> points, CurveAttributes curveAttributes) {
 
         if (curveAttributes != null) this.attributes = curveAttributes;
         if (points != null) this.points = points;
     }
 
-    public ArrayList<Point> getPoints() {
+    public List<Point> getPoints() {
         return points;
     }
 
-    public void setPoints(ArrayList<Point> points) {
+    public void setPoints(List<Point> points) {
         this.points = points;
     }
 

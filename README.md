@@ -38,7 +38,7 @@ $$
 y = \cos(t) \left(e^{\cos(t)} - 2\cos(4t) - \sin^5\left(\frac{t}{12}\right)\right)
 $$
 
-![Butterfly Curve](examples-images/Butterfly_Curve_Screenshot_20250310_163133.png)
+![Butterfly Curve](examples/images/Butterfly_Curve_Screenshot_20250310_163133.png)
 
 ---
 
@@ -46,15 +46,15 @@ $$
 
 Phone [1080x2400]:
 
-![Spiral Test Phone](examples-images/SpriralTest_Phone_Screenshot_20250305_182944.png)
+![Spiral Test Phone](examples/images/SpiralTest_Phone_Screenshot_20250305_182944.png)
 
 Tablet (10" resolution 2560x1600):
 
-![X Boxes Examples](examples-images/GreenRedCrossBox_Screenshot_20250306_161700.png)
+![X Boxes Examples](examples/images/GreenRedCrossBox_Screenshot_20250306_161700.png)
 
-![Planets](examples-images/Planets_Screenshot_20250305_122522.png)
+![Planets](examples/images/Planets_Screenshot_20250305_122522.png)
 
-![Perspective_ISO](examples-images/Perspective_ISO.png)
+![Perspective_ISO](examples/images/Perspective_ISO.png)
 
 ---
 
@@ -62,21 +62,22 @@ Tablet (10" resolution 2560x1600):
 
 [Simple Lines Example](app/src/main/java/com/ai/engg/curves/x/y/examples/drawings/LinesCirclesCurves.kt)
 
-![Simple Lines Example](examples-images/JustLines_Screenshot_20250310_133938.png)
+![Simple Lines Example](examples/images/JustLines_Screenshot_20250310_133938.png)
 
 [Simple Lines and Circles Example](app/src/main/java/com/ai/engg/curves/x/y/examples/drawings/LinesCirclesCurves.kt)
 
-![Simple Lines and Circles Example](examples-images/LinesAndCircles_Screenshot_20250310_141325.png)
+![Simple Lines and Circles Example](examples/images/LinesAndCircles_Screenshot_20250310_141325.png)
 
 [Simple Lines, Circles, and Parabola Example](app/src/main/java/com/ai/engg/curves/x/y/examples/drawings/LinesCirclesCurves.kt)
 
-![Simple Lines, Circles, Parabola Example](examples-images/LinesCirclesParabolas_Screenshot_20250310_141732.png)
+![Simple Lines, Circles, Parabola Example](examples/images/LinesCirclesParabolas_Screenshot_20250310_141732.png)
 
 ---
 
 **More examples:**
 
-- [Spiral curves](/SPIRAL_EXAMPLES.md)
+- [Spiral curves](/examples/md/SPIRAL_EXAMPLES.md)
+- [Boxes](/examples/md/BOX_EXAMPLES.md)
 
 ---
 

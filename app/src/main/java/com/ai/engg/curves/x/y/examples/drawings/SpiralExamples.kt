@@ -246,3 +246,54 @@ fun spiralExample7(): Curve {
 
     return Curve(points, defAttribs)
 }
+
+fun spiralExample8(): Curve {
+
+    val points = arrayListOf<Point>()
+
+    var x0 = 0f
+    var y0 = 0f
+    var radius = 1f
+
+    var i = 0f
+    while (i <= 252f) {
+        when {
+            i < 42f -> {
+                points.add(Point(x0 + radius * cos(i), y0 + radius * sin(i)))
+                radius += 0.115f
+                x0 += 0.15f
+            }
+            i < 75f -> {
+                points.add(Point(x0 + radius * cos(i), y0 + radius * sin(i)))
+                radius -= 0.115f
+                x0 += 0.15f
+            }
+            i < 120f -> {
+                points.add(Point(x0 + radius * cos(i), y0 + radius * sin(i)))
+                radius += 0.075f
+                x0 += 0.15f
+            }
+            i < 148f -> {
+                points.add(Point(x0 + radius * cos(i), y0 + radius * sin(i)))
+                radius -= 0.075f
+                x0 += 0.15f
+            }
+            i < 180f -> {
+                points.add(Point(x0 + radius * cos(i), y0 + radius * sin(i)))
+                radius += 0.05f
+                x0 += 0.15f
+            }
+            else -> {
+                points.add(Point(x0 + radius * cos(i), y0 + radius * sin(i)))
+                radius -= 0.05f
+                x0 += 0.15f
+            }
+        }
+        i += 0.1f
+    }
+
+    val defAttribs = CurveAttributes()
+    defAttribs.isDrawPoints = false
+
+    return Curve(points, defAttribs)
+}

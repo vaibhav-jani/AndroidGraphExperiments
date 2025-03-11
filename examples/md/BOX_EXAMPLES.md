@@ -25,14 +25,14 @@ Tablet (10" resolution 2560x1600):
 
 [Four Boxes Stacked Example](../../app/src/main/java/com/ai/engg/curves/x/y/examples/drawings/FourBoxesStacked.kt)
 
-![Four Boxes Example](../images/FourBoxesStacked_Screenshot_20250310_200429.png)
+![Four Boxes Example](../images/FourBoxesStacked_Screenshot_20250311_172800.png)
 
 
 [Eight Boxes Example](../../app/src/main/java/com/ai/engg/curves/x/y/examples/drawings/MoreBoxes.kt)
 
-![Eight Boxes Example](../images/EightBoxes_Screenshot_20250310_225538.png)
+![Eight Boxes Example](../images/EightBoxes_Screenshot_20250311_182031.png)
 
 
 [Eight Colored Boxes Example](../../app/src/main/java/com/ai/engg/curves/x/y/examples/drawings/MoreBoxes.kt)
 
-![Eight Colored Boxes Example](../images/EightColoredBoxes_Screenshot_20250310_225426.png)
+![Eight Colored Boxes Example](../images/EightColoredBoxes_Screenshot_20250311_182145.png)

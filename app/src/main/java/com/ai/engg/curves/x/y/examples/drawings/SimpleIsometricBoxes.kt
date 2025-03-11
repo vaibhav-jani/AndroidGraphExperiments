@@ -2,7 +2,6 @@ package com.ai.engg.curves.x.y.examples.drawings
 
 import com.ai.engg.curves.drawings.boxes.Box
 import com.ai.engg.curves.drawings.boxes.OpenBox
-import com.ai.engg.curves.drawings.boxes.filled.ClosedBox
 import com.ai.engg.curves.models.Drawing
 
 fun simpleIsoMetricExample1(): List<Drawing> {
@@ -11,30 +10,48 @@ fun simpleIsoMetricExample1(): List<Drawing> {
     val w1 = 100
     val d1 = 60
 
-    val baseBox = ClosedBox(l1 * 0.01f, w1.toFloat(), d1.toFloat(), 0f, 0f)
+    // Plane box
+    val baseBox = Box(0.02f, w1.toFloat(), d1.toFloat(), 0f, 0f)
 
-    val box1 = ClosedBox(l1 * 0.7f, w1 * 0.10f, -d1 * 0.40f, baseBox.blr.x, baseBox.blr.y)
-    val box2 = ClosedBox(l1 * 0.7f, w1 * 0.40f, -d1 * 0.10f, box1.brr.x, box1.brr.y)
-    val box3 = ClosedBox(l1 * 0.35f, -w1 * 0.20f, d1 * 0.15f, box1.tr.x, box1.tr.y)
-    val box4 = ClosedBox(l1 * 0.15f, w1 * 0.10f, -d1 * 0.10f, box3.tlr.x, box3.tlr.y)
+    val box1 = Box(l1 * 0.7f, w1 * 0.10f, -d1 * 0.40f, baseBox.blr.x, baseBox.blr.y)
+    val box2 = Box(l1 * 0.7f, w1 * 0.40f, -d1 * 0.10f, box1.brr.x, box1.brr.y)
+    val box3 = Box(l1 * 0.35f, -w1 * 0.20f, d1 * 0.15f, box1.tr.x, box1.tr.y)
+    val box4 = Box(l1 * 0.15f, w1 * 0.10f, -d1 * 0.10f, box3.tlr.x, box3.tlr.y)
 
-    val box5 = ClosedBox(l1 * 0.25f, w1 * 0.20f, -d1 * 0.20f, box2.bl.x, box2.bl.y)
-    val box6 = ClosedBox(l1 * 0.50f, w1 * 0.10f, -d1 * 0.10f, box5.brr.x, box5.brr.y)
-    val box7 = ClosedBox(l1 * 0.15f, -w1 * 0.15f, -d1 * 0.20f, box6.trr.x, box6.trr.y)
-    val box8 = ClosedBox(l1 * 0.50f, w1 * 0.10f, d1 * 0.10f, box7.tl.x, box7.tl.y)
+    val box5 = Box(l1 * 0.25f, w1 * 0.20f, -d1 * 0.20f, box2.bl.x, box2.bl.y)
+    val box6 = Box(l1 * 0.50f, w1 * 0.10f, -d1 * 0.10f, box5.brr.x, box5.brr.y)
+    val box7 = Box(l1 * 0.15f, -w1 * 0.15f, -d1 * 0.20f, box6.trr.x, box6.trr.y)
+    val box8 = Box(l1 * 0.50f, w1 * 0.10f, d1 * 0.10f, box7.tl.x, box7.tl.y)
 
-    val box9 = ClosedBox(l1 * 0.45f, w1 * 0.30f, d1 * 0.30f, baseBox.tl.x + 15, baseBox.tl.y)
-    val box10 = ClosedBox(l1 * 0.65f, w1 * 0.05f, d1 * 0.05f, box9.tl.x, box9.tl.y)
+    val box9 = Box(l1 * 0.45f, w1 * 0.30f, d1 * 0.30f, baseBox.tl.x + 15, baseBox.tl.y)
+    val box10 = Box(l1 * 0.65f, w1 * 0.05f, d1 * 0.05f, box9.tl.x, box9.tl.y)
 
-    val box11 = ClosedBox(l1 * 0.01f, -w1 * 0.25f, d1 * 0.25f, box10.tr.x, box10.tr.y)
-    val box12 = ClosedBox(l1 * 0.65f, w1 * 0.05f, -d1 * 0.05f, box11.tlr.x, box11.tlr.y)
-    val box13 = ClosedBox(l1 * 0.01f, w1 * 0.25f, d1 * 0.25f, box8.tl.x, box8.tl.y)
+    // Plane box
+    val box11 = Box(0.02f, -w1 * 0.25f, d1 * 0.25f, box10.tr.x, box10.tr.y)
+    val box12 = Box(l1 * 0.65f, w1 * 0.05f, -d1 * 0.05f, box11.tlr.x, box11.tlr.y)
+
+    // Plane box
+    val box13 = Box(0.02f, w1 * 0.25f, d1 * 0.25f, box8.tl.x, box8.tl.y)
+    box13.color = "#da600f"
+
+    val box14 = Box(l1 * 0.350f, -0.02f, - d1 * 0.175f, box13.trr.x, box13.trr.y)
+    box14.color = "#0a6fff"
+
+    val box15 = Box(l1 * 0.175f, w1 * -0.175f, - 0.02f, box13.trr.x, box13.trr.y)
+    box15.color = "#00600f"
+
+    val box16 = Box(l1 * 0.250f,  0.02f, - d1 * 0.1f, box13.tlr.x, box13.tlr.y)
+    box16.color = "#da600f"
+
+    val box17 = Box(l1 * 0.500f,  w1 * 0.075f, - 0.1f, box13.tlr.x, box13.tlr.y)
 
     return arrayListOf(
-        baseBox, box1, box2, box3,
-        box4, box5, box6, box7,
-        box8, box9, box10, box11,
-        box12, box13
+        baseBox, box1, box2,
+        box3, box4, box5,
+        box6, box7, box8,
+        box9, box10, box11,
+        box12, box13, box14,
+        box15, box16, box17
     )
 }
 

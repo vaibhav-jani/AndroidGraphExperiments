@@ -1,9 +1,8 @@
-package com.ai.engg.curves.drawings.boxes.filled;
+package com.ai.engg.curves.drawings.boxes;
 
 import com.ai.engg.curves.models.Curve;
 import com.ai.engg.curves.models.CurveAttributes;
 import com.ai.engg.curves.models.Point;
-import com.ai.engg.curves.drawings.boxes.Box;
 
 import java.util.ArrayList;
 

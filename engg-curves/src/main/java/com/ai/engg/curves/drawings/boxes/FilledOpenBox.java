@@ -1,4 +1,4 @@
-package com.ai.engg.curves.drawings.boxes.filled;
+package com.ai.engg.curves.drawings.boxes;
 
 import com.ai.engg.curves.models.Point;
 

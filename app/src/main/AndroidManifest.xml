@@ -40,10 +40,14 @@
         <activity android:name="com.ai.engg.curves.x.y.examples.activities.FourBoxesStackedExample" />
         <activity android:name="com.ai.engg.curves.x.y.examples.activities.TestExBoxesExample" />
         <activity android:name="com.ai.engg.curves.x.y.examples.activities.TwoNestedBoxesExample" />
-        <activity android:name="com.ai.engg.curves.x.y.examples.activities.EightBoxesExample" />
+        <activity
+            android:name="com.ai.engg.curves.x.y.examples.activities.EightBoxesExample"
+            android:exported="true" />
         <activity android:name="com.ai.engg.curves.x.y.examples.activities.EightColoredBoxesExample" />
 
-        <activity android:name="com.ai.engg.curves.x.y.examples.activities.SimpleIsometricExample1" />
+        <activity
+            android:name="com.ai.engg.curves.x.y.examples.activities.SimpleIsometricExample1"
+            android:exported="true" />
         <activity android:name="com.ai.engg.curves.x.y.examples.activities.SimpleIsometricExample2" />
         <activity android:name="com.ai.engg.curves.x.y.examples.activities.SimpleIsometricColorExample" />
         <activity android:name="com.ai.engg.curves.x.y.examples.activities.EmptyComplexIsometricExample" />

@@ -1,6 +1,6 @@
 package com.ai.engg.curves.x.y.examples.drawings
 
-import com.ai.engg.curves.drawings.boxes.filled.FilledBox
+import com.ai.engg.curves.drawings.boxes.FilledBox
 import com.ai.engg.curves.models.Drawing
 
 fun eightBoxes(): ArrayList<Drawing> {

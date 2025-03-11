@@ -9,9 +9,9 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import com.ai.engg.curves.display.window.SurfaceAttributes
 import com.ai.engg.curves.display.window.compose.MathCurveViewComposable
-import com.ai.engg.curves.x.y.examples.drawings.emptyComplexIsometric
+import com.ai.engg.curves.x.y.examples.drawings.getSinglePlanet
 
-class EmptyComplexIsometricExample : ComponentActivity() {
+class SinglePlanetExample : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         this.window.setFlags(
@@ -19,15 +19,15 @@ class EmptyComplexIsometricExample : ComponentActivity() {
             WindowManager.LayoutParams.FLAG_FULLSCREEN
         )
         setContent {
-            GlobeExample()
+            SinglePlanet()
         }
     }
 }
 
 @Composable
-private fun GlobeExample() {
+private fun SinglePlanet() {
 
-    val drawings = emptyComplexIsometric()
+    val drawings = getSinglePlanet()
 
     val surfaceAttributes = SurfaceAttributes()
     MathCurveViewComposable(
@@ -36,4 +36,6 @@ private fun GlobeExample() {
         modifier = Modifier.fillMaxSize()
     )
 }
+
+
 

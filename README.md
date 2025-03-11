@@ -80,6 +80,8 @@ Tablet (10" resolution 2560x1600):
 - [Boxes](/examples/md/BOX_EXAMPLES.md)
 - [Isometric Boxes](/examples/md/ISOMETRIC_BOXES.md)
 - [Isometric Triangle](/examples/md/ISOMETRIC_TRIANGLES.md)
+- [Curves](/examples/md/CURVE_EXAMPLES.md)
+- [Globes](/examples/md/GLOBE_EXAMPLES.md)
 
 ---
 

@@ -9,7 +9,6 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import com.ai.engg.curves.display.window.SurfaceAttributes
 import com.ai.engg.curves.display.window.compose.MathCurveViewComposable
-import com.ai.engg.curves.x.y.examples.drawings.simpleIsoMetricExample1
 import com.ai.engg.curves.x.y.examples.drawings.simpleIsoMetricExample2
 
 class SimpleIsometricExample2 : ComponentActivity() {
@@ -20,13 +19,13 @@ class SimpleIsometricExample2 : ComponentActivity() {
             WindowManager.LayoutParams.FLAG_FULLSCREEN
         )
         setContent {
-            IsometricExample()
+            GlobeExample()
         }
     }
 }
 
 @Composable
-private fun IsometricExample() {
+private fun GlobeExample() {
 
     val drawings = simpleIsoMetricExample2()
 

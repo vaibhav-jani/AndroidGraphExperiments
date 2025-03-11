@@ -18,13 +18,13 @@ class FilledDiamond : ComponentActivity() {
             WindowManager.LayoutParams.FLAG_FULLSCREEN
         )
         setContent {
-            IsometricExample()
+            GlobeExample()
         }
     }
 }
 
 @Composable
-private fun IsometricExample() {
+private fun GlobeExample() {
 
     val drawings = filledDiamond()
 

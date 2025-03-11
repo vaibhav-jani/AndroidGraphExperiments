@@ -62,7 +62,8 @@
         <activity android:name="com.ai.engg.curves.x.y.examples.activities.FilledPyramidDiamond3" />
         <activity android:name="com.ai.engg.curves.x.y.examples.activities.FilledDiamond" />
 
-        <activity android:name="com.ai.engg.curves.x.y.examples.TheRing" />
+        <activity android:name="com.ai.engg.curves.x.y.examples.activities.TheRing" />
+        <activity android:name="com.ai.engg.curves.x.y.examples.activities.CircleFormulaRing" />
         <activity android:name="com.ai.engg.curves.x.y.examples.CurveTest" />
         <activity android:name="com.ai.engg.curves.x.y.examples.OCirclesO" />
         <activity android:name="com.ai.engg.curves.x.y.examples.ParabolaHyperbolaEllipse" />
@@ -70,8 +71,9 @@
         <activity android:name="com.ai.engg.curves.x.y.examples.EllipsesWithCircle" />
         <activity android:name="com.ai.engg.curves.x.y.examples.SinCosTan" />
 
-        <activity android:name="com.ai.engg.curves.x.y.examples.Planets" />
-        <activity android:name="com.ai.engg.curves.x.y.examples.Uranus" />
+        <activity android:name="com.ai.engg.curves.x.y.examples.activities.SinglePlanetExample" />
+        <activity android:name="com.ai.engg.curves.x.y.examples.activities.Planets" />
+        <activity android:name="com.ai.engg.curves.x.y.examples.activities.ColorPlanets" />
     </application>
 
 </manifest>

@@ -16,3 +16,5 @@ Tablet (10" resolution 2560x1600):
 ![Filled Diamond 1](../images/FilledPyramidDiamond1_Screenshot_20250311_160023.png)
 ![Filled Diamond 2](../images/FilledPyramidDiamond2_Screenshot_20250311_155253.png)
 ![Filled Diamond 3](../images/FilledPyramidDiamond3_Screenshot_20250311_155929.png)
+
+![Filled Color Diamonds](../images/FilledColorDiamond_Screenshot_20250311_224005.png)

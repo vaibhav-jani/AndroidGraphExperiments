@@ -54,6 +54,8 @@ Tablet (10" resolution 2560x1600):
 
 ![Planets](examples/images/ColorPlanets_Screenshot_20250311_201154.png)
 
+![Filled Color Diamonds](examples/images/FilledColorDiamond_Screenshot_20250311_224005.png)
+
 ![Planets](examples/images/EightColoredBoxes_Screenshot_20250311_182145.png)
 
 ![Perspective_ISO](examples/images/Perspective_ISO.png)

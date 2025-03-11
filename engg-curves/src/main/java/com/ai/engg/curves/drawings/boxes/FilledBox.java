@@ -119,6 +119,7 @@ public class FilledBox extends Box {
         return topColor;
     }
 
+    // Call this first before other colors
     public void setColor(String color) {
         this.color = color;
         // TODO Bad hack,

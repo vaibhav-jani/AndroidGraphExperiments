@@ -60,6 +60,7 @@
         <activity android:name="com.ai.engg.curves.x.y.examples.activities.FilledPyramidDiamond1" />
         <activity android:name="com.ai.engg.curves.x.y.examples.activities.FilledPyramidDiamond2" />
         <activity android:name="com.ai.engg.curves.x.y.examples.activities.FilledPyramidDiamond3" />
+        <activity android:name="com.ai.engg.curves.x.y.examples.activities.FilledColorPyramidDiamond" />
         <activity android:name="com.ai.engg.curves.x.y.examples.activities.FilledDiamond" />
 
         <activity android:name="com.ai.engg.curves.x.y.examples.activities.TheRing" />

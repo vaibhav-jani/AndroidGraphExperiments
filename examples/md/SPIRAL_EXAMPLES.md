@@ -1,8 +1,6 @@
 Android Graphs Experiments
 ==========================
 
----
-
 Tablet (10" resolution 2560x1600):
 
 [Spiral Examples](../../app/src/main/java/com/ai/engg/curves/x/y/examples/drawings/SpiralExamples.kt)

@@ -78,6 +78,7 @@ Tablet (10" resolution 2560x1600):
 
 - [Spiral curves](/examples/md/SPIRAL_EXAMPLES.md)
 - [Boxes](/examples/md/BOX_EXAMPLES.md)
+- [Isometric Boxes](/examples/md/ISOMETRIC_EXAMPLES.md)
 
 ---
 

@@ -26,9 +26,7 @@ class SimpleIsometricDiamond : ComponentActivity() {
 
 @Composable
 private fun GlobeExample() {
-
     val drawings = simpleDiamond()
-
     val surfaceAttributes = SurfaceAttributes()
     MathCurveViewComposable(
         drawings = drawings,

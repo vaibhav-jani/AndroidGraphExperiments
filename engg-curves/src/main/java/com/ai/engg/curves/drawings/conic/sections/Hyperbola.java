@@ -14,7 +14,7 @@ public class Hyperbola extends Drawing {
     public static int NEGATIVE_Y = 2;
     public static int POSITIVE_Y = 3;
 
-    private String color = "#00FF00";
+    private String color = "#0000FF";
     private final float x0;
     private final float yo;
     private final float start;

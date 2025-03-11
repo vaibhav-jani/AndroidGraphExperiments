@@ -26,9 +26,7 @@ class TestExBoxesExample : ComponentActivity() {
 
 @Composable
 private fun TestExBoxes() {
-
     val drawings = testExBoxes()
-
     val surfaceAttributes = SurfaceAttributes()
     MathCurveViewComposable(
         drawings = drawings,

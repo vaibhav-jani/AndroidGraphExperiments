@@ -27,10 +27,8 @@ class SpiralExample7 : ComponentActivity() {
 
 @Composable
 private fun SpiralExample() {
-
     val drawing = Drawing()
     drawing.curves.add(spiralExample7())
-
     val surfaceAttributes = SurfaceAttributes()
     MathCurveViewComposable(
         drawing = drawing,

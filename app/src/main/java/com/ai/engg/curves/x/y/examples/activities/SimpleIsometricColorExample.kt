@@ -26,9 +26,7 @@ class SimpleIsometricColorExample : ComponentActivity() {
 
 @Composable
 private fun GlobeExample() {
-
     val drawings = simpleIsoMetricColorExample()
-
     val surfaceAttributes = SurfaceAttributes()
     MathCurveViewComposable(
         drawings = drawings,

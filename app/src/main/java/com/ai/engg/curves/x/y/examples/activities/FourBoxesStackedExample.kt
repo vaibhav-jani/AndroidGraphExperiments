@@ -26,9 +26,7 @@ class FourBoxesStackedExample : ComponentActivity() {
 
 @Composable
 private fun FourBoxesStacked() {
-
     val drawings = fourBoxesStacked()
-
     val surfaceAttributes = SurfaceAttributes()
     MathCurveViewComposable(
         drawings = drawings,

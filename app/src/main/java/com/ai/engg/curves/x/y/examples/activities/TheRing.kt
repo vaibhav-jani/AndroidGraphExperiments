@@ -26,9 +26,7 @@ class TheRing : ComponentActivity() {
 
 @Composable
 private fun RingExample() {
-
     val drawings = getRingOfLines()
-
     val surfaceAttributes = SurfaceAttributes()
     MathCurveViewComposable(
         drawings = drawings,

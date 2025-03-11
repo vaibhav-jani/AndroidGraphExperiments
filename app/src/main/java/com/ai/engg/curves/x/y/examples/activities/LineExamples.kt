@@ -30,11 +30,9 @@ class LineExamples : ComponentActivity() {
 @Composable
 private fun Lines() {
     val drawing = Drawing()
-
     // drawing.curves = getLines()
     // drawing.curves = getLinesAndCircles()
     drawing.curves = getLinesAndCirclesAndCurves()
-
     val surfaceAttributes = SurfaceAttributes()
     MathCurveViewComposable(
         drawing = drawing,

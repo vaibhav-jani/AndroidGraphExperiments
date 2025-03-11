@@ -26,9 +26,7 @@ class CircleFormulaRing : ComponentActivity() {
 
 @Composable
 private fun RingExample() {
-
     val drawings = getCircleRing()
-
     val surfaceAttributes = SurfaceAttributes()
     MathCurveViewComposable(
         drawings = drawings,

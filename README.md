@@ -52,7 +52,9 @@ Tablet (10" resolution 2560x1600):
 
 ![X Boxes Examples](examples/images/GreenRedCrossBox_Screenshot_20250306_161700.png)
 
-![Planets](examples/images/Planets_Screenshot_20250305_122522.png)
+![Planets](examples/images/ColorPlanets_Screenshot_20250311_201154.png)
+
+![Planets](examples/images/EightColoredBoxes_Screenshot_20250311_182145.png)
 
 ![Perspective_ISO](examples/images/Perspective_ISO.png)
 

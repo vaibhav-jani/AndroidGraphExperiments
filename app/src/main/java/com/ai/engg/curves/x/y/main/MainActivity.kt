@@ -97,7 +97,7 @@ fun getAllActivities(context: Context): List<Example> {
     val activitiesList = mutableListOf<Example>()
     val packageName = context.packageName
 
-    val examplesPackage = "com.ai.engg.curves.x.y.examples."
+    val examplesPackage = "com.ai.engg.curves.x.y.examples.activities."
     val packageInfo = manager.getPackageInfo(packageName, PackageManager.GET_ACTIVITIES)
     packageInfo.activities?.forEach { activityInfo ->
         if (activityInfo.name.startsWith(examplesPackage)) {

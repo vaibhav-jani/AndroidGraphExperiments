@@ -27,10 +27,8 @@ class AssembledBoxExample : ComponentActivity() {
 
 @Composable
 private fun SimpleAssembledBox() {
-
     val drawing = Drawing()
     drawing.curves = simpleAssembledBox()
-
     val surfaceAttributes = SurfaceAttributes()
     MathCurveViewComposable(
         drawing = drawing,

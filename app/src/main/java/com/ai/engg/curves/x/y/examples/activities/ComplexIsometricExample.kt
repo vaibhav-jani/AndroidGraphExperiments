@@ -26,9 +26,7 @@ class ComplexIsometricExample : ComponentActivity() {
 
 @Composable
 private fun GlobeExample() {
-
     val drawings = complexIsometric()
-
     val surfaceAttributes = SurfaceAttributes()
     MathCurveViewComposable(
         drawings = drawings,

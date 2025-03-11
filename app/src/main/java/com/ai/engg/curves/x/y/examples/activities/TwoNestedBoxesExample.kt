@@ -28,10 +28,8 @@ class TwoNestedBoxesExample : ComponentActivity() {
 
 @Composable
 private fun TwoNestedBoxes() {
-
     val drawing = Drawing()
     drawing.curves = twoNestedBoxes()
-
     val surfaceAttributes = SurfaceAttributes()
     MathCurveViewComposable(
         drawing = drawing,

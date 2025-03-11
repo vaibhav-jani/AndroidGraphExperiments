@@ -27,10 +27,8 @@ class ButterflyCurveExample : ComponentActivity() {
 
 @Composable
 private fun ButterflyCurve() {
-
     val drawing = Drawing()
     drawing.curves.add(butterflyCurve())
-
     val surfaceAttributes = SurfaceAttributes()
     MathCurveViewComposable(
         drawing = drawing,

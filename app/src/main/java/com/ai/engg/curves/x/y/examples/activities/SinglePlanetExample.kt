@@ -26,9 +26,7 @@ class SinglePlanetExample : ComponentActivity() {
 
 @Composable
 private fun SinglePlanet() {
-
     val drawings = getSinglePlanet()
-
     val surfaceAttributes = SurfaceAttributes()
     MathCurveViewComposable(
         drawings = drawings,

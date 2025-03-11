@@ -25,9 +25,7 @@ class FilledPyramidDiamond2 : ComponentActivity() {
 
 @Composable
 private fun GlobeExample() {
-
     val drawings = filledPyramidDiamond2()
-
     val surfaceAttributes = SurfaceAttributes()
     MathCurveViewComposable(
         drawings = drawings,

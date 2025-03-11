@@ -27,10 +27,8 @@ class FourBoxesAssembledExample : ComponentActivity() {
 
 @Composable
 private fun FourBoxesAssembled() {
-
     val drawing = Drawing()
     drawing.curves = fourBoxesAssembled()
-
     val surfaceAttributes = SurfaceAttributes()
     MathCurveViewComposable(
         drawing = drawing,

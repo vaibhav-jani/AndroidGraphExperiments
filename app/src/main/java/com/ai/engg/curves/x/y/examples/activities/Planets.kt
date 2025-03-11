@@ -27,9 +27,7 @@ class Planets : ComponentActivity() {
 
 @Composable
 private fun PlanetsExample() {
-
     val drawings = getPlanets()
-
     val surfaceAttributes = SurfaceAttributes()
     MathCurveViewComposable(
         drawings = drawings,

@@ -64,12 +64,12 @@
 
         <activity android:name="com.ai.engg.curves.x.y.examples.activities.TheRing" />
         <activity android:name="com.ai.engg.curves.x.y.examples.activities.CircleFormulaRing" />
-        <activity android:name="com.ai.engg.curves.x.y.examples.CurveTest" />
-        <activity android:name="com.ai.engg.curves.x.y.examples.OCirclesO" />
-        <activity android:name="com.ai.engg.curves.x.y.examples.ParabolaHyperbolaEllipse" />
-        <activity android:name="com.ai.engg.curves.x.y.examples.Protons" />
-        <activity android:name="com.ai.engg.curves.x.y.examples.EllipsesWithCircle" />
-        <activity android:name="com.ai.engg.curves.x.y.examples.SinCosTan" />
+        <activity android:name="com.ai.engg.curves.x.y.examples.activities.OneHalfCurve" />
+        <activity android:name="com.ai.engg.curves.x.y.examples.activities.EllipsesWithCircle" />
+        <activity android:name="com.ai.engg.curves.x.y.examples.activities.CirclesAndCurves" />
+        <activity android:name="com.ai.engg.curves.x.y.examples.activities.SinCosTan" />
+        <activity android:name="com.ai.engg.curves.x.y.examples.activities.Protons" />
+        <activity android:name="com.ai.engg.curves.x.y.examples.activities.ParabolaHyperbolaEllipse" />
 
         <activity android:name="com.ai.engg.curves.x.y.examples.activities.SinglePlanetExample" />
         <activity android:name="com.ai.engg.curves.x.y.examples.activities.Planets" />

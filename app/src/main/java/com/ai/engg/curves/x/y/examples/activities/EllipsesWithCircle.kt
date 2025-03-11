@@ -9,11 +9,9 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import com.ai.engg.curves.display.window.SurfaceAttributes
 import com.ai.engg.curves.display.window.compose.MathCurveViewComposable
-import com.ai.engg.curves.models.Drawing
-import com.ai.engg.curves.x.y.examples.drawings.spiralExample7
-import com.ai.engg.curves.x.y.examples.drawings.spiralExample8
+import com.ai.engg.curves.x.y.examples.drawings.threeEllipses
 
-class SpiralExample8 : ComponentActivity() {
+class EllipsesWithCircle : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         this.window.setFlags(
@@ -21,19 +19,22 @@ class SpiralExample8 : ComponentActivity() {
             WindowManager.LayoutParams.FLAG_FULLSCREEN
         )
         setContent {
-            SpiralExample()
+            EllipsesWithCircleExample()
         }
     }
 }
 
 @Composable
-private fun SpiralExample() {
-    val drawing = Drawing()
-    drawing.curves.add(spiralExample8())
+private fun EllipsesWithCircleExample() {
+    val drawings = threeEllipses()
     val surfaceAttributes = SurfaceAttributes()
     MathCurveViewComposable(
-        drawing = drawing,
+        drawings = drawings,
         surfaceAttributes = surfaceAttributes,
         modifier = Modifier.fillMaxSize()
     )
 }
+
+
+
+

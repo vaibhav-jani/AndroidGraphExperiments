@@ -3,9 +3,14 @@ Android Graphs Experiments
 
 Graphing experiments on Android.
 
-Mathematics has always been fascinating, and the work of visual and recreational mathematicians is incredibly inspiring. Creators like Grant Sanderson (3Blue1Brown) and Khan Academy have played a huge role in shaping an intuitive understanding of mathematical concepts, making abstract ideas visually engaging and accessible.
+Mathematics has always been fascinating, and the work of visual and recreational mathematicians is
+incredibly inspiring. Creators like Grant Sanderson (3Blue1Brown) and Khan Academy have played a
+huge role in shaping an intuitive understanding of mathematical concepts, making abstract ideas
+visually engaging and accessible.
 
-Android Graph Experiments is my first pet project, which I started during my internship at my first job while learning calculus, pre-calculus, and Android development. It reflects a deep interest in mathematical visualizations and function plotting.
+Android Graph Experiments is my first pet project, which I started during my internship at my first
+job while learning calculus, pre-calculus, and Android development. It reflects a deep interest in
+mathematical visualizations and function plotting.
 
 Features:
 
@@ -20,10 +25,10 @@ Known issues [WIP]:
 
 ---
 
-Example: Butterfly Curve
+Example: [Butterfly Curve](app/src/main/java/com/ai/engg/curves/x/y/examples/drawings/ButterflyCurve.kt)
 
-One of the visually striking curves that can be plotted is the Butterfly Curve, defined by the parametric equations:
-
+One of the visually striking curves that can be plotted is the Butterfly Curve, defined by the
+parametric equations:
 
 $$
 x = \sin(t) \left(e^{\cos(t)} - 2\cos(4t) - \sin^5\left(\frac{t}{12}\right)\right)
@@ -33,93 +38,75 @@ $$
 y = \cos(t) \left(e^{\cos(t)} - 2\cos(4t) - \sin^5\left(\frac{t}{12}\right)\right)
 $$
 
-![Butterfly Curve](examples-images/Butterfly_Screenshot_20250305_111808.png)
+![Butterfly Curve](examples/images/Butterfly_Curve_Screenshot_20250310_163133.png)
 
 ---
 
-Here are few samples I plotted:
+**Here are few samples I plotted:**
 
-![Spiral Test Phone](examples-images/SpriralTest_Phone_Screenshot_20250305_182944.png)
+Phone [1080x2400]:
+
+![Spiral Test Phone](examples/images/SpiralTest_Phone_Screenshot_20250305_182944.png)
+
+Tablet (10" resolution 2560x1600):
+
+![X Boxes Examples](examples/images/GreenRedCrossBox_Screenshot_20250306_161700.png)
+
+![Planets](examples/images/ColorPlanets_Screenshot_20250311_201154.png)
+
+![Filled Color Diamonds](examples/images/FilledColorDiamond_Screenshot_20250311_224005.png)
+
+![Planets](examples/images/EightColoredBoxes_Screenshot_20250311_182145.png)
+
+![Perspective_ISO](examples/images/Perspective_ISO.png)
 
 ---
 
 Tablet (10" resolution 2560x1600):
 
-![Lines Example](examples-images/LinesTest_Screenshot_20250309_221321.png)
+[Simple Lines Example](app/src/main/java/com/ai/engg/curves/x/y/examples/drawings/LinesCirclesCurves.kt)
 
-![Lines with curve](examples-images/Line_curves2_Screenshot_20250309_222846.png)
+![Simple Lines Example](examples/images/JustLines_Screenshot_20250310_133938.png)
 
-![A Box](examples-images/ABox_Screenshot_20250305_111949.png)
+[Simple Lines and Circles Example](app/src/main/java/com/ai/engg/curves/x/y/examples/drawings/LinesCirclesCurves.kt)
 
-![Complex Diamond](examples-images/ComplexDiamond_Screenshot_20250305_112422.png)
+![Simple Lines and Circles Example](examples/images/LinesAndCircles_Screenshot_20250310_141325.png)
 
-![Eight Boxes](examples-images/EightBoxes_Screenshot_20250305_113558.png)
+[Simple Lines, Circles, and Parabola Example](app/src/main/java/com/ai/engg/curves/x/y/examples/drawings/LinesCirclesCurves.kt)
 
-![Eight Boxes Color](examples-images/EightBox_Color_Screenshot_20250306_221848.png)
-
-![First ISO Space](examples-images/FirstIsoSpace_Screenshot_20250305_122818.png)
-
-![Four adjacent boxes](examples-images/FourAdjacentBoxes_Screenshot_20250305_172154.png)
-
-![Four stack boxes](examples-images/FourStackBoxes_Screenshot_20250305_172123.png)
-
-![Test Boxes](examples-images/Test_Boxes_Screenshot_20250305_122632.png)
-
-![Two Nested Boxes](examples-images/TwoNestedBoxes_Screenshot_20250305_171943.png)
-
-![O Circles](examples-images/OCircleO_Screenshot_20250305_171857.png)
-
-![Parabola Hyperbola Ellipse](examples-images/Parabola_Hyperbola_Ellipse_Screenshot_20250305_171733.png)
-
-![Protons](examples-images/Protons_Screenshot_20250305_171658.png)
-
-![Pyramid Diamond](examples-images/PyramidDiamond_Screenshot_20250305_171541.png)
-
-![Simple Diamond](examples-images/SimpleDiamond_Screenshot_20250305_171804.png)
-
-![Ellipses With Circle](examples-images/EllipsesWithCircle_Screenshot_20250305_122711.png)
-
-![Filled Pyramid Diamond 3](examples-images/Filled_Pyramid_Diamond3_Screenshot_20250305_122006.png)
-
-![Filled Pyramid Diamond 2](examples-images/Filled_Pyramid_Diamonds_Screenshot_20250305_121637.png)
-
-![Sin Cos Tan](examples-images/SinCosTan_Color_Screenshot_20250306_220712.png)
-
-![Curve Test 2](examples-images/CTest_Screenshot_20250305_113251.png)
-
-![Spiral1](examples-images/Spiral1_Screenshot_20250305_123335.png)
-
-![Spiral2](examples-images/Spiral2_Screenshot_20250305_123358.png)
-
-![Spiral3](examples-images/Spiral3_Screenshot_20250305_123417.png)
-
-![Spiral4](examples-images/Spiral4_Screenshot_20250305_123534.png)
-
-![Spiral5](examples-images/Spiral5_Screenshot_20250305_123555.png)
-
-![Spiral6](examples-images/Spiral6_Screenshot_20250305_123619.png)
-
-![Spiral7](examples-images/Spiral7_Screenshot_20250305_123637.png)
-
-![The Ring](examples-images/TheRing_Screenshot_20250305_111857.png)
-
-![Uranus](examples-images/Uranus_Screenshot_20250305_122433.png)
-
-![Planets](examples-images/Planets_Screenshot_20250305_122522.png)
-
-![Complex ISO Empty](examples-images/Complex_ISO_Empty_Screenshot_20250305_112801.png)
-
-![Complex ISO](examples-images/Complex_ISO_Screenshot_20250305_112644.png)
-
-![X Complex ISO](examples-images/GreenRedCrossBox_Screenshot_20250306_161700.png)
-
-![Simple ISO Multicolor](examples-images/Simple_ISO_Multi_color_Screenshot_20250306_215604.png)
-
-![Complex ISO Perspective](examples-images/Perspective_ISO.png)
+![Simple Lines, Circles, Parabola Example](examples/images/LinesCirclesParabolas_Screenshot_20250310_141732.png)
 
 ---
 
-[MIT License](/LICENSE.md)  
+**More examples:**
+
+- [Spiral curves](/examples/md/SPIRAL_EXAMPLES.md)
+- [Boxes](/examples/md/BOX_EXAMPLES.md)
+- [Isometric Boxes](/examples/md/ISOMETRIC_BOXES.md)
+- [Isometric Triangle](/examples/md/ISOMETRIC_TRIANGLES.md)
+- [Curves](/examples/md/CURVE_EXAMPLES.md)
+- [Globes](/examples/md/GLOBE_EXAMPLES.md)
+
+---
+
+[MIT License](/LICENSE.md)
+
+Copyright (c) 2011-2025 Vaibhav Jani
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and
+associated documentation files (the "Software"), to deal in the Software without restriction,
+including without limitation the rights to use, copy, modify, merge, publish, distribute,
+sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial
+portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT
+NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES
+OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 
 

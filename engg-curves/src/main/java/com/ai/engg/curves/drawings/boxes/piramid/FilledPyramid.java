@@ -1,7 +1,7 @@
 package com.ai.engg.curves.drawings.boxes.piramid;
 
 import com.ai.engg.curves.models.Point;
-import com.ai.engg.curves.drawings.boxes.filled.FilledBox;
+import com.ai.engg.curves.drawings.boxes.FilledBox;
 
 public class FilledPyramid extends FilledBox {
 

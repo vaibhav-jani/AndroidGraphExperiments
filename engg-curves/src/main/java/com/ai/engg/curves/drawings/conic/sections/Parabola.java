@@ -21,7 +21,7 @@ public class Parabola extends Drawing {
     private final float b;
     private final int direction;
 
-    private String color = "#FF0000";
+    private String color = "#0000FF";
 
     public Parabola(float x0, float yo, float start, float end, float a, float b, int direction) {
         this.x0 = x0;

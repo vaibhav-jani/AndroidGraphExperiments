@@ -67,7 +67,7 @@ public class MathCurveView extends BaseSurface {
 
         for (Drawing drawing : drawings) {
             for (Curve curve : drawing.getCurves()) {
-                ArrayList<Point> points = curve.getPoints();
+                List<Point> points = curve.getPoints();
                 for (Point point : points) {
                     if (point.x < minimum_x) minimum_x = point.x;
                     if (point.y < minimum_y) minimum_y = point.y;
@@ -101,7 +101,7 @@ public class MathCurveView extends BaseSurface {
         for (Drawing drawing : drawings) {
             for (Curve curve : drawing.getCurves()) {
                 ArrayList<Point> tPoints = new ArrayList<>();
-                ArrayList<Point> points = curve.getPoints();
+                List<Point> points = curve.getPoints();
 
                 for (Point point : points) {
                     Point tPoint = new Point(point.x, point.y);
@@ -117,7 +117,7 @@ public class MathCurveView extends BaseSurface {
 
         for (Drawing drawing : drawings) {
             for (Curve curve : drawing.getCurves()) {
-                ArrayList<Point> points = curve.getPoints();
+                List<Point> points = curve.getPoints();
                 for (Point point : points) {
                     point.x = x_translate_factor + (point.x * x_unit_length);
                     point.y = y_translate_factor - (point.y * y_unit_length);

@@ -30,7 +30,9 @@ public class FilledBox extends Box {
     @Override
     protected void draw() {
 
-        curves.add(getLine(bl, br));
+        super.draw();
+
+        /*curves.add(getLine(bl, br));
         curves.add(getLine(br, tr));
         curves.add(getLine(tr, tl));
         curves.add(getLine(tl, bl));
@@ -40,7 +42,7 @@ public class FilledBox extends Box {
 
         curves.add(getLine(br, brr));
         curves.add(getLine(tr, trr));
-        curves.add(getLine(tl, tlr));
+        curves.add(getLine(tl, tlr));*/
     }
 
     protected void fillSide() {

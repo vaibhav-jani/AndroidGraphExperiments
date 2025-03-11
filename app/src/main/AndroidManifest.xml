@@ -50,13 +50,13 @@
         <activity android:name="com.ai.engg.curves.x.y.examples.activities.ExComplexIsometricExample" />
         <activity android:name="com.ai.engg.curves.x.y.examples.activities.ComplexIsometricExample" />
 
-        <activity android:name="com.ai.engg.curves.x.y.examples.SimpleDiamond" />
-        <activity android:name="com.ai.engg.curves.x.y.examples.ComplexDiamond" />
-        <activity android:name="com.ai.engg.curves.x.y.examples.PyramidDiamond" />
-        <activity android:name="com.ai.engg.curves.x.y.examples.FilledPyramidDiamond" />
-        <activity android:name="com.ai.engg.curves.x.y.examples.FilledPyramidDiamond2" />
-        <activity android:name="com.ai.engg.curves.x.y.examples.FilledPyramidDiamond3" />
-        <activity android:name="com.ai.engg.curves.x.y.examples.FilledSimpleDiamond" />
+        <activity android:name="com.ai.engg.curves.x.y.examples.activities.SimpleIsometricDiamond" />
+        <activity android:name="com.ai.engg.curves.x.y.examples.activities.ComplexIsometricDiamond" />
+        <activity android:name="com.ai.engg.curves.x.y.examples.activities.SimplePyramidDiamond" />
+        <activity android:name="com.ai.engg.curves.x.y.examples.activities.FilledPyramidDiamond1" />
+        <activity android:name="com.ai.engg.curves.x.y.examples.activities.FilledPyramidDiamond2" />
+        <activity android:name="com.ai.engg.curves.x.y.examples.activities.FilledPyramidDiamond3" />
+        <activity android:name="com.ai.engg.curves.x.y.examples.activities.FilledDiamond" />
 
         <activity android:name="com.ai.engg.curves.x.y.examples.TheRing" />
         <activity android:name="com.ai.engg.curves.x.y.examples.CurveTest" />
